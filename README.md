@@ -14,7 +14,8 @@ Open `http://localhost:3000`.
 ## Main files to edit
 
 - `data/projects.ts` — project names, categories and the data model.
-- `data/projectContent.ts` — verified locations, facts and descriptions. `PROJECT_RESEARCH_REPORT.md` records the source of each.
+- `data/projectContent.ts` — verified facts and descriptions. `PROJECT_RESEARCH_REPORT.md` records the source of each.
+- `data/projectLocations.ts` — the approved addresses and Google Maps links.
 - `lib/i18n.ts` — every interface string, in English and Persian.
 - `scripts/image-import.decisions.json` — which photographs each project shows, and in what order.
 - `app/globals.css` — complete visual system, including the RTL tokens and Persian font.
@@ -31,9 +32,6 @@ export const projectContent: Record<string, ProjectContent> = {
       country: { en: "…", fa: "…" },
       city: { en: "…", fa: "…" },
       district: { en: "…", fa: "…" },
-      address: { en: "…", fa: "…" },
-      latitude: 0,
-      longitude: 0,
     },
     facts: {
       completionYear: { en: "…", fa: "…" },
@@ -77,7 +75,9 @@ Images can have any dimensions. Their frames are fixed and crop with `object-fit
 
 ## Location
 
-Once a project has both `latitude` and `longitude`, its Location button opens a map. Without them it opens a short notice and whatever place details exist.
+Approved locations live in `data/projectLocations.ts`, with a Persian address and a Google Maps link for each project. Only those projects show the Location button, which opens the link in a new tab, and the Location fact. Use the links exactly as supplied, and add one only when it has been approved.
+
+The fact is short: Persian shows the first two parts of the address, and English shows the `district`, `city` and `country` from `data/projectContent.ts`. Full Persian addresses are never machine-translated, so a project with no English place name shows no Location fact in English.
 
 ## Fonts and logo
 

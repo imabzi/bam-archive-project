@@ -14,7 +14,7 @@ You are continuing an existing Next.js + TypeScript project for BAM's architectu
 - The site root is the BAM Architecture Archive (`/projects` redirects there). It opens directly on the archive with no intro hero, and has two views: Visual (image-led) and Index (a text-only list). Both open the same project page.
 - Category filters only: Residential, Commercial & Leisure, Large-Scale Development, Healthcare.
 - Clicking a project opens a dedicated page.
-- Dedicated page: category, title, location modal, exterior hero slider, project information, two-column interior gallery.
+- Dedicated page: category, title, Location link to Google Maps, exterior hero slider, project information, two-column interior gallery.
 - Project fields may differ by typology. Keep the underlying data schema flexible rather than forcing every field to render.
 
 ## Language
@@ -26,6 +26,7 @@ You are continuing an existing Next.js + TypeScript project for BAM's architectu
 - Existing 43 project names came from the user's spreadsheet. Preserve them unless the user explicitly changes them.
 - Do not invent project facts, addresses, dates, areas, units or coordinates. Missing data stays undefined and is hidden; never render a placeholder such as an em dash, N/A or 0.
 - Project photography comes from `npm run import:images`. The source archive is read-only: never write to it. Never assign a folder to a project on a guess; `IMAGE_IMPORT_REPORT.md` lists what still needs a person to decide.
+- `data/projectLocations.ts` is the approved location list. Use its links exactly as supplied and never add one from research or inference. A project not on the list shows no Location button or fact.
 - Preserve responsive behavior and mobile simplicity.
 
 ## Suggested next tasks

@@ -1,6 +1,6 @@
 "use client";
 
-import type { PartialLocalizedText, Project } from "@/data/projects";
+import type { PartialLocalizedText, Project, ProjectLocation } from "@/data/projects";
 import { formatNumber, type Dictionary, type Language } from "@/lib/i18n";
 import { useLanguage } from "@/lib/usePreferences";
 
@@ -16,19 +16,26 @@ function count(value: number | undefined, language: Language) {
   return value !== undefined && Number.isFinite(value) && value > 0 ? formatNumber(value, language) : undefined;
 }
 
+// Only approved locations are shown. Persian shows the first two parts of the
+// address, and English the existing short place name: the full address is for routing.
+function placeFor(location: ProjectLocation | undefined, language: Language, t: Dictionary) {
+  if (!location?.addressFa) return undefined;
+  if (language === "fa") return location.addressFa.split("،").slice(0, 2).join("،");
+  return [text(location.district, language), text(location.city, language), text(location.country, language)]
+    .filter(Boolean)
+    .join(t.listSeparator);
+}
+
 function factsFor(project: Project, language: Language, t: Dictionary) {
   const { facts, location, category } = project;
   const area = (value: number | undefined) => {
     const amount = count(value, language);
     return amount && `${amount} ${t.squareMeters}`;
   };
-  const place = [text(location?.district, language), text(location?.city, language), text(location?.country, language)]
-    .filter(Boolean)
-    .join(t.listSeparator);
 
   return [
     { label: t.factProjectType, value: category[language] },
-    { label: t.factLocation, value: place },
+    { label: t.factLocation, value: placeFor(location, language, t) },
     { label: t.factCompletionYear, value: text(facts.completionYear, language) },
     { label: t.factSiteArea, value: area(facts.siteArea) },
     { label: t.factBuiltUpArea, value: area(facts.builtUpArea) },

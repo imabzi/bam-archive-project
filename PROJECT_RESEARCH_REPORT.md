@@ -2,6 +2,8 @@
 
 Researched 2 November 2026. Published values live in `data/projectContent.ts`. Accuracy came first, so many fields are deliberately empty.
 
+> **Superseded for locations.** The approved list in `data/projectLocations.ts` now controls every address, map link and Location button. The coordinates and street addresses below are a record of the research only: they are no longer in the site's data or shown on the site.
+
 ## Summary
 
 | Measure | Count |

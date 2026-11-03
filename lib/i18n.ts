@@ -32,11 +32,6 @@ const en = {
 
   location: "Location",
   showLocation: "Show project location",
-  projectLocation: "Project location",
-  mapTitle: "Project map",
-  mapUnavailable: "The location of this project has not yet been added to the map.",
-  openInMaps: "Open in OpenStreetMap",
-  close: "Close",
 
   exteriorPhotographs: "Exterior photographs",
   slideLabel: (position: string) => `Show photograph ${position}`,
@@ -88,13 +83,8 @@ const fa: Dictionary = {
   browseAllProjects: "مشاهده همه پروژه‌ها",
   notFoundTitle: "پروژه یافت نشد",
 
-  location: "موقعیت پروژه",
+  location: "موقعیت",
   showLocation: "نمایش موقعیت پروژه",
-  projectLocation: "موقعیت پروژه",
-  mapTitle: "نقشه پروژه",
-  mapUnavailable: "موقعیت این پروژه هنوز روی نقشه ثبت نشده است.",
-  openInMaps: "مشاهده روی نقشه",
-  close: "بستن",
 
   exteriorPhotographs: "تصاویر نمای بیرونی",
   slideLabel: (position) => `نمایش تصویر ${position}`,

@@ -29,7 +29,7 @@ export function ProjectDetail({ project }: { project: Project }) {
             <span className="eyebrow">{project.category[language]}</span>
             <h1 className="detail-title">{title}</h1>
           </div>
-          <LocationButton location={project.location} projectTitle={title} />
+          <LocationButton url={project.location?.googleMapsUrl} />
         </div>
       </section>
 

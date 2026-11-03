@@ -2,11 +2,11 @@ import type { LocalizedText, ProjectContent } from "./projects";
 
 // Verified project content, keyed by project code. PROJECT_RESEARCH_REPORT.md
 // records the source and confidence of every value here. Add only what has been
-// verified: anything left out is hidden on the project page.
+// verified: anything left out is hidden on the project page. Approved addresses
+// and map links are kept separately in projectLocations.ts.
 //
-// Coordinates are the mapped building, never a neighbourhood centre. Years are
-// Gregorian in English and Solar Hijri in Persian; one Solar Hijri year spans two
-// Gregorian years, so "2011–12" is used when the month is not known.
+// Years are Gregorian in English and Solar Hijri in Persian; one Solar Hijri year
+// spans two Gregorian years, so "2011–12" is used when the month is not known.
 
 const iran: LocalizedText = { en: "Iran", fa: "ایران" };
 const tehran: LocalizedText = { en: "Tehran", fa: "تهران" };
@@ -19,11 +19,7 @@ export const projectContent: Record<string, ProjectContent> = {
       en: "A residential building south of Jamshidieh Park, on the Alborz foothills in northern Tehran. It received a national award for luxury residential buildings in 2011–12.",
       fa: "ساختمانی مسکونی در جنوب پارک جمشیدیه، در دامنه البرز و شمال تهران. این ساختمان در سال ۱۳۹۰ جایزه لوکس‌ترین ساختمان کشور را دریافت کرد.",
     },
-    location: {
-      ...inTehran,
-      district: { en: "Jamshidieh", fa: "جمشیدیه" },
-      address: { en: "South of Jamshidieh Park", fa: "جنوب پارک جمشیدیه" },
-    },
+    location: { ...inTehran, district: { en: "Jamshidieh", fa: "جمشیدیه" } },
     facts: {
       completionYear: { en: "2011–12", fa: "۱۳۹۰" },
       siteArea: 2918,
@@ -73,11 +69,7 @@ export const projectContent: Record<string, ProjectContent> = {
       en: "A residential building on Yaser Street in Niavaran, one of three separate buildings that share a single facade design, together with BAM Niavaran 01 and BAM Niavaran 02.",
       fa: "ساختمانی مسکونی در خیابان یاسر نیاوران، یکی از سه ساختمان مجزا با طراحی واحد در نما، در کنار بام نیاوران ۱ و بام نیاوران ۲.",
     },
-    location: {
-      ...inTehran,
-      district: { en: "Niavaran", fa: "نیاوران" },
-      address: { en: "Yaser Street", fa: "خیابان یاسر" },
-    },
+    location: { ...inTehran, district: { en: "Niavaran", fa: "نیاوران" } },
   },
   R08: {
     description: {
@@ -99,18 +91,14 @@ export const projectContent: Record<string, ProjectContent> = {
       en: "A residential building in the Fereshteh area of Tehran, with access to Shahid Chamran Expressway and to Valiasr and Shariati streets.",
       fa: "ساختمانی مسکونی در محدوده فرشته تهران، با دسترسی به بزرگراه شهید چمران و خیابان‌های ولیعصر و شریعتی.",
     },
-    location: { ...inTehran, district: { en: "Fereshteh", fa: "فرشته" } },
+    location: inTehran,
   },
   R11: {
     description: {
       en: "A residential building in Zafaraniyeh, north of Asef Street, built on a 3,023 m² site.",
       fa: "ساختمانی مسکونی در زعفرانیه، شمال خیابان آصف، بر زمینی به مساحت ۳٬۰۲۳ مترمربع.",
     },
-    location: {
-      ...inTehran,
-      district: { en: "Zafaraniyeh", fa: "زعفرانیه" },
-      address: { en: "North of Asef Street", fa: "شمال خیابان آصف" },
-    },
+    location: { ...inTehran, district: { en: "Zafaraniyeh", fa: "زعفرانیه" } },
     facts: { siteArea: 3023 },
   },
   R12: {
@@ -141,13 +129,7 @@ export const projectContent: Record<string, ProjectContent> = {
       en: "A residential complex in Saadat Abad, developed for a community of doctors and health-care professionals. Sepid, the Persian word for white, refers to clarity and purity.",
       fa: "مجموعه‌ای مسکونی در سعادت‌آباد برای جامعه پزشکان و فعالان حوزه سلامت. نام سپید به شفافیت و پاکی اشاره دارد.",
     },
-    location: {
-      ...inTehran,
-      district: { en: "Saadat Abad", fa: "سعادت‌آباد" },
-      address: { en: "Taherkhani Street", fa: "خیابان طاهرخانی" },
-      latitude: 35.7741,
-      longitude: 51.35089,
-    },
+    location: { ...inTehran, district: { en: "Saadat Abad", fa: "سعادت‌آباد" } },
   },
   R16: {
     description: {
@@ -189,13 +171,7 @@ export const projectContent: Record<string, ProjectContent> = {
       en: "The head office of the BAM group on Andarzgoo Boulevard in northern Tehran. It houses the group's investment, design, engineering, construction and administrative departments.",
       fa: "دفتر مرکزی گروه بام در بلوار اندرزگو، شمال تهران. بخش‌های سرمایه‌گذاری، طراحی، مهندسی، اجرا و اداری گروه در این ساختمان مستقرند.",
     },
-    location: {
-      ...inTehran,
-      address: {
-        en: "No. 5, start of North Vatanpour Street, Andarzgoo Boulevard",
-        fa: "بلوار اندرزگو، ابتدای خیابان وطن‌پور شمالی، پلاک ۵",
-      },
-    },
+    location: inTehran,
     facts: { architect: daliri },
   },
   T02: {
@@ -203,16 +179,7 @@ export const projectContent: Record<string, ProjectContent> = {
       en: "A 16-storey office and commercial centre on Farmanieh Street, also known as BAM Brand Center.",
       fa: "مرکزی اداری و تجاری ۱۶ طبقه در خیابان فرمانیه، که با نام بام برند سنتر نیز شناخته می‌شود.",
     },
-    location: {
-      ...inTehran,
-      district: { en: "Farmanieh", fa: "فرمانیه" },
-      address: {
-        en: "No. 4, Farmanieh (Lavasani) Street, opposite Farmanieh Club",
-        fa: "خیابان فرمانیه (شهید لواسانی)، روبروی باشگاه فرمانیه، پلاک ۴",
-      },
-      latitude: 35.79952,
-      longitude: 51.47284,
-    },
+    location: { ...inTehran, district: { en: "Farmanieh", fa: "فرمانیه" } },
     facts: { floors: 16, architect: daliri },
   },
   T03: {
@@ -220,12 +187,7 @@ export const projectContent: Record<string, ProjectContent> = {
       en: "A commercial and office complex on Andarzgoo Boulevard in northern Tehran, also known as BAM Center Avan, planned as a specialist centre for computers, phones and electronics.",
       fa: "مجموعه‌ای تجاری و اداری در بلوار اندرزگو، شمال تهران، با نام دیگر بام سنتر آوان، که به‌عنوان مرکز تخصصی رایانه، تلفن همراه و تجهیزات الکترونیکی طراحی شده است.",
     },
-    location: {
-      ...inTehran,
-      address: { en: "Andarzgoo Boulevard", fa: "بلوار اندرزگو" },
-      latitude: 35.80183,
-      longitude: 51.45768,
-    },
+    location: inTehran,
     facts: { architect: daliri },
   },
   T04: {
@@ -255,39 +217,21 @@ export const projectContent: Record<string, ProjectContent> = {
       en: "A commercial and leisure complex in Jannat Abad, western Tehran, also known as BAM Center Niayesh and Niayesh Mall. Its floors combine shops, restaurants and an indoor amusement park.",
       fa: "مجموعه‌ای تجاری و تفریحی در جنت‌آباد، غرب تهران، با نام‌های بام سنتر نیایش و نیایش مال. طبقات آن فروشگاه‌ها، رستوران‌ها و شهربازی سرپوشیده را در بر می‌گیرد.",
     },
-    location: {
-      ...inTehran,
-      district: { en: "Jannat Abad", fa: "جنت‌آباد" },
-      address: { en: "Shahid Rajab Salahi Street", fa: "خیابان شهید رجب صلاحی" },
-      latitude: 35.76468,
-      longitude: 51.30597,
-    },
+    location: { ...inTehran, district: { en: "Jannat Abad", fa: "جنت‌آباد" } },
   },
   T08: {
     description: {
       en: "An equestrian club in Chitgar Park, western Tehran, with competition, training and covered arenas.",
       fa: "باشگاهی سوارکاری در پارک چیتگر، غرب تهران، با مانژ مسابقات، مانژ تمرین و مانژ سرپوشیده.",
     },
-    location: {
-      ...inTehran,
-      district: { en: "Chitgar Park", fa: "پارک چیتگر" },
-      address: { en: "Paralympic Square", fa: "میدان پارالمپیک" },
-      latitude: 35.73103,
-      longitude: 51.19947,
-    },
+    location: { ...inTehran, district: { en: "Chitgar Park", fa: "پارک چیتگر" } },
   },
   T09: {
     description: {
       en: "A commercial and leisure complex of low-rise buildings on the east side of Chitgar Lake in Tehran's District 22, designed by Morteza Adib and Maryam Yousefi.",
       fa: "مجموعه‌ای تجاری و تفریحی با بناهای کم‌ارتفاع در ضلع شرقی دریاچه چیتگر، منطقه ۲۲ تهران، با طراحی مرتضی ادیب و مریم یوسفی.",
     },
-    location: {
-      ...inTehran,
-      district: { en: "District 22", fa: "منطقه ۲۲" },
-      address: { en: "Sadaf Boulevard", fa: "بلوار صدف" },
-      latitude: 35.74456,
-      longitude: 51.22159,
-    },
+    location: { ...inTehran, district: { en: "District 22", fa: "منطقه ۲۲" } },
     facts: {
       siteArea: 60000,
       floors: 3,
@@ -299,26 +243,14 @@ export const projectContent: Record<string, ProjectContent> = {
       en: "An artificial lake in Tehran's District 22, also known as Chitgar Lake, with a water surface of about 130 hectares. Its first phase opened in May 2013.",
       fa: "دریاچه‌ای مصنوعی در منطقه ۲۲ تهران، با نام دیگر دریاچه چیتگر و سطح آبی حدود ۱۳۰ هکتار. فاز نخست آن در اردیبهشت ۱۳۹۲ افتتاح شد.",
     },
-    location: {
-      ...inTehran,
-      district: { en: "District 22", fa: "منطقه ۲۲" },
-      latitude: 35.74617,
-      longitude: 51.21214,
-      mapSpan: 0.02,
-    },
+    location: { ...inTehran, district: { en: "District 22", fa: "منطقه ۲۲" } },
   },
   T11: {
     description: {
       en: "A hotel on the Caspian coast of Mazandaran, between Nowshahr and Noor, with more than 500 rooms, built by BAM.",
       fa: "هتلی در ساحل دریای خزر در مازندران، میان نوشهر و نور، با بیش از ۵۰۰ واحد اقامتی، ساخته‌شده توسط گروه بام.",
     },
-    location: {
-      city: { en: "Nowshahr", fa: "نوشهر" },
-      country: iran,
-      address: { en: "Kilometre 10, Nowshahr–Noor road", fa: "کیلومتر ۱۰ جاده نوشهر به نور" },
-      latitude: 36.59897,
-      longitude: 51.65389,
-    },
+    location: { city: { en: "Nowshahr", fa: "نوشهر" }, country: iran },
   },
   M01: {
     description: {
@@ -339,16 +271,7 @@ export const projectContent: Record<string, ProjectContent> = {
       en: "A hospital on 22 Bahman Street in Aqdasiyeh, northeast Tehran.",
       fa: "بیمارستانی در خیابان ۲۲ بهمن، اقدسیه، شمال شرق تهران.",
     },
-    location: {
-      ...inTehran,
-      district: { en: "Aqdasiyeh", fa: "اقدسیه" },
-      address: {
-        en: "No. 6, 22 Bahman Street, start of Artesh Boulevard",
-        fa: "ابتدای بلوار ارتش، خیابان ۲۲ بهمن، پلاک ۶",
-      },
-      latitude: 35.79989,
-      longitude: 51.48959,
-    },
+    location: { ...inTehran, district: { en: "Aqdasiyeh", fa: "اقدسیه" } },
   },
   H02: {
     description: {
@@ -369,24 +292,14 @@ export const projectContent: Record<string, ProjectContent> = {
       en: "A 200-bed hospital in western Tehran.",
       fa: "بیمارستانی ۲۰۰ تختخوابی در غرب تهران.",
     },
-    location: {
-      ...inTehran,
-      district: { en: "Kan", fa: "کن" },
-      latitude: 35.75711,
-      longitude: 51.27039,
-    },
+    location: { ...inTehran, district: { en: "Kan", fa: "کن" } },
   },
   H05: {
     description: {
       en: "A 250-bed specialist hospital in Hakimiyeh, northeast Tehran, with 20 operating rooms. It opened in early 2023 as Nikan Sepid, also known as East Nikan Hospital.",
       fa: "بیمارستانی تخصصی و فوق‌تخصصی ۲۵۰ تختخوابی در حکیمیه، شمال شرق تهران، با ۲۰ اتاق عمل. این بیمارستان در اسفند ۱۴۰۱ با نام نیکان سپید، یا نیکان شرق، افتتاح شد.",
     },
-    location: {
-      ...inTehran,
-      district: { en: "Hakimiyeh", fa: "حکیمیه" },
-      latitude: 35.73919,
-      longitude: 51.59447,
-    },
+    location: { ...inTehran, district: { en: "Hakimiyeh", fa: "حکیمیه" } },
     facts: {
       completionYear: { en: "2023", fa: "۱۴۰۱" },
       siteArea: 5000,
@@ -398,13 +311,7 @@ export const projectContent: Record<string, ProjectContent> = {
       en: "A four-storey specialist clinic of more than 3,000 m² at the start of Shahid Mahallati Expressway, opened in March 2013.",
       fa: "درمانگاهی تخصصی در چهار طبقه و بیش از ۳٬۰۰۰ مترمربع، در ابتدای بزرگراه شهید محلاتی، که در اسفند ۱۳۹۱ افتتاح شد.",
     },
-    location: {
-      ...inTehran,
-      address: {
-        en: "Start of Shahid Mahallati Expressway, corner of South Gilaki",
-        fa: "ابتدای بزرگراه شهید محلاتی، نبش گیلکی جنوبی",
-      },
-    },
+    location: inTehran,
     facts: { completionYear: { en: "2013", fa: "۱۳۹۱" }, floors: 4 },
   },
 };

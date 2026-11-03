@@ -1,5 +1,6 @@
 import type { Language } from "@/lib/i18n";
 import { projectContent } from "./projectContent";
+import { approvedLocations } from "./projectLocations";
 import { importedProjectImages } from "./projectImages.generated";
 
 // A value that exists in both languages.
@@ -28,10 +29,8 @@ export type ProjectLocation = {
   country?: PartialLocalizedText;
   city?: PartialLocalizedText;
   district?: PartialLocalizedText;
-  address?: PartialLocalizedText; // Street level, without the district or city.
-  latitude?: number;
-  longitude?: number;
-  mapSpan?: number; // Degrees either side of the marker, for sites larger than a building.
+  addressFa?: string; // The approved full address. Persian only: never machine-translated.
+  googleMapsUrl?: string; // The approved link, used exactly as supplied.
 };
 
 // Only add verified values. Anything left out is hidden on the project page.
@@ -152,7 +151,7 @@ export const projects: Project[] = raw.map(([code, titleFa, titleEn, categoryId]
     category: projectCategories[categoryId],
     description: content?.description,
     images: content?.images ?? importedProjectImages[code] ?? placeholderImages(index),
-    location: content?.location,
+    location: { ...content?.location, ...approvedLocations[code] },
     facts: content?.facts ?? {},
   };
 });
