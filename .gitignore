@@ -27,3 +27,5 @@ next-env.d.ts
 .DS_Store
 .env*.local
 .vercel
+# Original project images and documents, read by the image import. Not for publishing.
+/source-images/

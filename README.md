@@ -57,6 +57,8 @@ npm run import:images -- --sheets   # Make contact sheets of images not yet revi
 
 The source defaults to `D:\Design\Media\iran picture Docs`. Set `BAM_IMAGE_SOURCE` to use another folder. The source is only ever read.
 
+Folders that are not in that archive go in `source-images/`, which is read the same way and is gitignored. Never place originals in `public/`: everything there is published.
+
 The import writes `public/projects/<project-slug>/`, `data/projectImages.generated.ts` and `IMAGE_IMPORT_REPORT.md`. It is safe to rerun: unchanged images are skipped, and only files the script made itself are ever replaced or removed.
 
 To change what a project shows:

@@ -12,7 +12,7 @@ You are continuing an existing Next.js + TypeScript project for BAM's architectu
 
 ## Information architecture
 - The site root is the BAM Architecture Archive (`/projects` redirects there). It opens directly on the archive with no intro hero, and has two views: Visual (image-led) and Index (a text-only list). Both open the same project page.
-- Category filters only: Residential, Commercial & Leisure, Large-Scale Development, Healthcare.
+- Category filters only, in this order: Residential, Commercial, Medical, International, Developments.
 - Clicking a project opens a dedicated page.
 - Dedicated page: category, title, Location link to Google Maps, exterior hero slider, project information, two-column interior gallery.
 - Project fields may differ by typology. Keep the underlying data schema flexible rather than forcing every field to render.

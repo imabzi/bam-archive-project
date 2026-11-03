@@ -12,6 +12,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 import {
+  ADDITIONAL_SOURCE,
   DEFAULT_SOURCE,
   FOLDER_DECISIONS,
   LOW_RES_LONG_EDGE,
@@ -24,6 +25,7 @@ import { buildMatcher, hammingDistance, inspectImages, isImageFile, loadProjects
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SOURCE = path.resolve(process.env.BAM_IMAGE_SOURCE || DEFAULT_SOURCE);
+const ADDITIONAL = path.join(ROOT, ADDITIONAL_SOURCE);
 const PUBLIC_PROJECTS = path.join(ROOT, "public", "projects");
 const DECISIONS_PATH = path.join(ROOT, "scripts", "image-import.decisions.json");
 const MANIFEST_PATH = path.join(ROOT, "scripts", ".image-import-manifest.json");
@@ -42,7 +44,7 @@ const CLASSES = ["exterior", "interior", "other"];
 // ---------------------------------------------------------------- Folders
 
 // Decides what every source folder holds. The most specific folder wins.
-async function discoverFolders(match) {
+async function discoverFolders(match, sources) {
   const folders = new Map();
 
   async function visit(directory, relative) {
@@ -94,7 +96,7 @@ async function discoverFolders(match) {
     }
   }
 
-  await visit(SOURCE, "");
+  for (const source of sources) await visit(source, "");
   return folders;
 }
 
@@ -185,7 +187,7 @@ const SHEET = { columns: 8, rows: 6, tileWidth: 220, tileHeight: 165, label: 20 
 
 async function makeTile(image, number) {
   const { tileWidth, tileHeight, label } = SHEET;
-  const body = await sharp(path.join(SOURCE, image.relative), { failOn: "none" })
+  const body = await sharp(image.absolute, { failOn: "none" })
     .rotate()
     .resize(tileWidth - 4, tileHeight - 4, { fit: "contain", background: "#222222" })
     .jpeg({ quality: 70 })
@@ -300,7 +302,7 @@ async function applyPlan(plan, manifest, insets) {
     const upToDate = previous && previous.sourceSha === entry.sourceSha && previous.profile === entry.profile && (await exists(destination));
     if (upToDate) unchanged++;
     else {
-      await writeImage(path.join(SOURCE, item.image.relative), destination, item.profile, inset);
+      await writeImage(item.image.absolute, destination, item.profile, inset);
       written++;
     }
     next[item.relative] = entry;
@@ -377,6 +379,8 @@ function renderReport(context) {
     "# Image import report",
     "",
     `Source: \`${SOURCE}\``,
+    "",
+    `Additional source: \`${ADDITIONAL_SOURCE}\``,
     "",
     "This file is rewritten by `npm run import:images`.",
     "",
@@ -466,7 +470,9 @@ function renderReport(context) {
   lines.push(
     "## How the import works",
     "",
-    "**The source is read-only.** The script only reads from the source directory. Images are converted into `public/projects`.",
+    "**The source is read-only.** The script only reads from the source directories. Images are converted into `public/projects`.",
+    "",
+    `**Originals stay out of the site.** Folders that are not in the main source live in \`${ADDITIONAL_SOURCE}\`, which is gitignored. Never place originals in \`public\`: everything there is published.`,
     "",
     "**Rerunning is safe and deterministic.** `scripts/.image-import-manifest.json` records every file the script made and which source file it came from.",
     "A rerun keeps files that are still correct, rewrites those that changed and deletes only files it made itself that are no longer selected.",
@@ -493,15 +499,19 @@ async function main() {
   const outputFromSource = path.relative(SOURCE, ROOT);
   if (!outputFromSource.startsWith("..") && !path.isAbsolute(outputFromSource)) throw new Error("The project must not be inside the source directory.");
 
+  const sources = (await exists(ADDITIONAL)) ? [SOURCE, ADDITIONAL] : [SOURCE];
+  const relativeOf = (file) => path.relative(sources.find((source) => file.startsWith(source + path.sep)), file);
+
   const projects = await loadProjects(ROOT);
-  const folders = await discoverFolders(buildMatcher(projects));
+  const folders = await discoverFolders(buildMatcher(projects), sources);
   const decisions = indexDecisions(await loadDecisions());
 
-  console.log(`Scanning ${SOURCE}`);
-  const allFiles = await walkFiles(SOURCE);
+  console.log(`Scanning ${sources.join(" and ")}`);
+  const allFiles = (await Promise.all(sources.map(walkFiles))).flat();
   const imageFiles = allFiles.filter(isImageFile);
   const ignoredFiles = allFiles.filter((file) => !isImageFile(file)).map((file) => ({ file, reason: ignoredReason(file) }));
-  const inspected = await inspectImages(SOURCE, imageFiles, CACHE_PATH, (done, total) => console.log(`  Inspected ${done}/${total}`));
+  const inspected = await inspectImages(relativeOf, imageFiles, CACHE_PATH, (done, total) => console.log(`  Inspected ${done}/${total}`));
+  const locations = new Map(imageFiles.map((file) => [relativeOf(file), file]));
 
   // An explicit decision on an image beats the status of the folder it sits in.
   const candidates = new Map(projects.map((project) => [project.code, []]));
@@ -515,12 +525,16 @@ async function main() {
   for (const [relative, info] of inspected) {
     const folder = folderOf(relative, folders);
     filesByFolder.set(folder.key, (filesByFolder.get(folder.key) ?? 0) + 1);
-    const image = { relative: toPosix(relative), info, folder };
+    const image = { relative: toPosix(relative), absolute: locations.get(relative), info, folder };
     allImages.push(image);
     const chosen = info.sha && decisions.chosen.get(shortSha(info.sha));
     const code = chosen?.code ?? (folder.status === "matched" ? folder.codes[0] : null);
     if (code) candidates.get(code).push(image);
   }
+
+  // A project whose source has gone would lose its images, so stop before removing them.
+  const lost = [...new Set([...decisions.chosen.values()].map(({ code }) => code))].filter((code) => !candidates.get(code)?.length);
+  if (lost.length) throw new Error(`No source images found for ${lost.join(", ")}. Nothing was changed.`);
 
   if (MAKE_SHEETS) {
     await mkdir(SHEETS_DIR, { recursive: true });

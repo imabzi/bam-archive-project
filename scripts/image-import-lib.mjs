@@ -124,7 +124,8 @@ export function buildMatcher(projects) {
       const unnumbered = unique(
         entries.filter((entry) => {
           const words = entry.tokens.filter((token) => !/^\d+$/.test(token));
-          return words.length < entry.tokens.length && skeleton(words) === folderSkeleton;
+          // One letter is too little to match on: "X11" must not claim the folder "BAM AX".
+          return words.length < entry.tokens.length && words.join("").length > 1 && skeleton(words) === folderSkeleton;
         })
       );
       if (unnumbered.length) return { codes: unnumbered, how: "number missing from folder name" };
@@ -205,7 +206,7 @@ async function inspectImage(file) {
 }
 
 // Hashing the archive takes minutes, so results are cached by path, size and time.
-export async function inspectImages(root, files, cachePath, onProgress = () => {}) {
+export async function inspectImages(relativeOf, files, cachePath, onProgress = () => {}) {
   let cache = {};
   try {
     cache = JSON.parse(await readFile(cachePath, "utf8"));
@@ -215,7 +216,7 @@ export async function inspectImages(root, files, cachePath, onProgress = () => {
   const results = new Map();
   const pending = [];
   for (const file of files) {
-    const relative = path.relative(root, file);
+    const relative = relativeOf(file);
     const info = await stat(file);
     const cached = cache[relative];
     if (cached && cached.size === info.size && cached.mtimeMs === info.mtimeMs) results.set(relative, cached);

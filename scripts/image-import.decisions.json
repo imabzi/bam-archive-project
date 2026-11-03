@@ -470,6 +470,80 @@
     "eba722aa9b1e4fe4",
     "22e5541db8de9d58"
    ]
+  },
+  "I01": {
+   "exterior": [
+    "c048767b2fd84c07",
+    "5dab4510ca2a8245",
+    "8908fe88835da06d",
+    "1dcb380bf5700c89",
+    "36533f501cfe050a",
+    "c4ee5a9cd056b610",
+    "4370b4c8f5a93428",
+    "2637e1b7e87794cd"
+   ],
+   "interior": [
+    "d954e9ee5dff1a91",
+    "e7aa793fb6a05d2b",
+    "f295e602a7a4aa4e",
+    "55e0e10cde62315f",
+    "d58515505fa91d14",
+    "6689b3ca22577fa7",
+    "5690282679c18248",
+    "d5fbd2f949d20928",
+    "4ac4ecf4b502f98e",
+    "e58df77ae673ccd5",
+    "3e1c76e63be23889",
+    "6e3d4ef6a3d3fff2",
+    "2f63987ab554b575",
+    "b6fe7d980781bcdc",
+    "bfdd82b63eaf5896"
+   ]
+  },
+  "I02": {
+   "exterior": [
+    "32331b942a0efe98",
+    "b00d211690ab576f",
+    "09af445cf8d54007",
+    "f3d6c756e54d2ed2",
+    "f578a21cd8bdc4b1",
+    "ed6ec555372eb6ae",
+    "3dc8849bb997f490",
+    "27e294d6aa61a261"
+   ],
+   "interior": [
+    "1dd8bbe0f79e6c61",
+    "944958f735735e1a",
+    "98677362ca2bd5b5",
+    "b635a2230edec064",
+    "03232f34e07d8bdf",
+    "6562b8ec6b00810d",
+    "b1a3a167b0e6f743",
+    "deba90bf6a0fcedf",
+    "3952348dae832e09",
+    "ce0cd22d28019883",
+    "0f512d32a1b1664a"
+   ]
+  },
+  "I03": {
+   "exterior": [
+    "dd773a8a3d68d090",
+    "bf874525a332bb47",
+    "13b6564f829e565b",
+    "d1fdb590de467899",
+    "265293296d5c7381"
+   ]
+  },
+  "I04": {
+   "exterior": [
+    "7059fa07cc975f10",
+    "1b4ab67b4e1dde0c",
+    "96b44fd9dc35d124",
+    "d72db1625eaaf15a",
+    "b16a2aa3e780ba13",
+    "76f490bf0be25cb1",
+    "2b5e8e29a8916006"
+   ]
   }
  },
  "skip": {
@@ -1402,6 +1476,37 @@
    "dfcf3fb2bbc93c27",
    "c526400e3f429687",
    "e0ff591cc2cca889"
+  ],
+  "Outdoor amenity scene, neither a view of the building nor an interior": [
+   "35f635ff10844cc9",
+   "0528b8a4ec03c8c6",
+   "d0e77da7a846c68e",
+   "966232f83832f704",
+   "7ff4c0d6524fd538",
+   "31bcf437a1e84965",
+   "2b6024b44b342104",
+   "884df431e946a4a1",
+   "b31256c988ca1362",
+   "4ef430b860ca0a32",
+   "00c1bd2bcbb80560",
+   "a2e5792ce94f9357",
+   "fdd50033e7d9c163",
+   "c0256b42997996b2",
+   "708b9df1468c44d3",
+   "42df3350655deadf",
+   "7693f0b97e21d942",
+   "7b19cb03f6ca12f6",
+   "fa8ab8dcbba6d18c",
+   "5d48bb07dbd8517f"
+  ],
+  "Close-up of one appliance": [
+   "65e5f886d43fd393"
+  ],
+  "Brochure page with printed text": [
+   "c96715912e9ff089"
+  ],
+  "Near-duplicate of the cover": [
+   "be6abbbf915fd59a"
   ]
  },
  "renders": [
@@ -1418,7 +1523,61 @@
   "256c51695a2612b6",
   "d3ee5345d59145a5",
   "935c6c5a5c5f522a",
-  "fb8fde56ef188048"
+  "fb8fde56ef188048",
+  "c048767b2fd84c07",
+  "5dab4510ca2a8245",
+  "8908fe88835da06d",
+  "1dcb380bf5700c89",
+  "36533f501cfe050a",
+  "c4ee5a9cd056b610",
+  "4370b4c8f5a93428",
+  "2637e1b7e87794cd",
+  "d954e9ee5dff1a91",
+  "e7aa793fb6a05d2b",
+  "f295e602a7a4aa4e",
+  "55e0e10cde62315f",
+  "d58515505fa91d14",
+  "6689b3ca22577fa7",
+  "5690282679c18248",
+  "d5fbd2f949d20928",
+  "4ac4ecf4b502f98e",
+  "e58df77ae673ccd5",
+  "3e1c76e63be23889",
+  "6e3d4ef6a3d3fff2",
+  "2f63987ab554b575",
+  "b6fe7d980781bcdc",
+  "bfdd82b63eaf5896",
+  "32331b942a0efe98",
+  "b00d211690ab576f",
+  "09af445cf8d54007",
+  "f3d6c756e54d2ed2",
+  "f578a21cd8bdc4b1",
+  "ed6ec555372eb6ae",
+  "3dc8849bb997f490",
+  "27e294d6aa61a261",
+  "1dd8bbe0f79e6c61",
+  "944958f735735e1a",
+  "98677362ca2bd5b5",
+  "b635a2230edec064",
+  "03232f34e07d8bdf",
+  "6562b8ec6b00810d",
+  "b1a3a167b0e6f743",
+  "deba90bf6a0fcedf",
+  "3952348dae832e09",
+  "ce0cd22d28019883",
+  "0f512d32a1b1664a",
+  "dd773a8a3d68d090",
+  "bf874525a332bb47",
+  "13b6564f829e565b",
+  "d1fdb590de467899",
+  "265293296d5c7381",
+  "7059fa07cc975f10",
+  "1b4ab67b4e1dde0c",
+  "96b44fd9dc35d124",
+  "d72db1625eaaf15a",
+  "b16a2aa3e780ba13",
+  "76f490bf0be25cb1",
+  "2b5e8e29a8916006"
  ],
  "inset": {
   "8320aa43bd14d3de": 0.035,

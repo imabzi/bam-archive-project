@@ -568,4 +568,88 @@ export const importedProjectImages: Partial<Record<string, ProjectImages>> = {
       "/projects/district-14-specialized-clinic/interior/interior-02.jpg"
     ]
   },
+  I01: {
+    "cover": "/projects/311/exterior/exterior-01.jpg",
+    "card": "/projects/311/card.jpg",
+    "exterior": [
+      "/projects/311/exterior/exterior-01.jpg",
+      "/projects/311/exterior/exterior-02.jpg",
+      "/projects/311/exterior/exterior-03.jpg",
+      "/projects/311/exterior/exterior-04.jpg",
+      "/projects/311/exterior/exterior-05.jpg",
+      "/projects/311/exterior/exterior-06.jpg",
+      "/projects/311/exterior/exterior-07.jpg",
+      "/projects/311/exterior/exterior-08.jpg"
+    ],
+    "interior": [
+      "/projects/311/interior/interior-01.jpg",
+      "/projects/311/interior/interior-02.jpg",
+      "/projects/311/interior/interior-03.jpg",
+      "/projects/311/interior/interior-04.jpg",
+      "/projects/311/interior/interior-05.jpg",
+      "/projects/311/interior/interior-06.jpg",
+      "/projects/311/interior/interior-07.jpg",
+      "/projects/311/interior/interior-08.jpg",
+      "/projects/311/interior/interior-09.jpg",
+      "/projects/311/interior/interior-10.jpg",
+      "/projects/311/interior/interior-11.jpg",
+      "/projects/311/interior/interior-12.jpg",
+      "/projects/311/interior/interior-13.jpg",
+      "/projects/311/interior/interior-14.jpg",
+      "/projects/311/interior/interior-15.jpg"
+    ]
+  },
+  I02: {
+    "cover": "/projects/b77/exterior/exterior-01.jpg",
+    "card": "/projects/b77/card.jpg",
+    "exterior": [
+      "/projects/b77/exterior/exterior-01.jpg",
+      "/projects/b77/exterior/exterior-02.jpg",
+      "/projects/b77/exterior/exterior-03.jpg",
+      "/projects/b77/exterior/exterior-04.jpg",
+      "/projects/b77/exterior/exterior-05.jpg",
+      "/projects/b77/exterior/exterior-06.jpg",
+      "/projects/b77/exterior/exterior-07.jpg",
+      "/projects/b77/exterior/exterior-08.jpg"
+    ],
+    "interior": [
+      "/projects/b77/interior/interior-01.jpg",
+      "/projects/b77/interior/interior-02.jpg",
+      "/projects/b77/interior/interior-03.jpg",
+      "/projects/b77/interior/interior-04.jpg",
+      "/projects/b77/interior/interior-05.jpg",
+      "/projects/b77/interior/interior-06.jpg",
+      "/projects/b77/interior/interior-07.jpg",
+      "/projects/b77/interior/interior-08.jpg",
+      "/projects/b77/interior/interior-09.jpg",
+      "/projects/b77/interior/interior-10.jpg",
+      "/projects/b77/interior/interior-11.jpg"
+    ]
+  },
+  I03: {
+    "cover": "/projects/x11/exterior/exterior-01.jpg",
+    "card": "/projects/x11/card.jpg",
+    "exterior": [
+      "/projects/x11/exterior/exterior-01.jpg",
+      "/projects/x11/exterior/exterior-02.jpg",
+      "/projects/x11/exterior/exterior-03.jpg",
+      "/projects/x11/exterior/exterior-04.jpg",
+      "/projects/x11/exterior/exterior-05.jpg"
+    ],
+    "interior": []
+  },
+  I04: {
+    "cover": "/projects/tajik-mall/exterior/exterior-01.jpg",
+    "card": "/projects/tajik-mall/card.jpg",
+    "exterior": [
+      "/projects/tajik-mall/exterior/exterior-01.jpg",
+      "/projects/tajik-mall/exterior/exterior-02.jpg",
+      "/projects/tajik-mall/exterior/exterior-03.jpg",
+      "/projects/tajik-mall/exterior/exterior-04.jpg",
+      "/projects/tajik-mall/exterior/exterior-05.jpg",
+      "/projects/tajik-mall/exterior/exterior-06.jpg",
+      "/projects/tajik-mall/exterior/exterior-07.jpg"
+    ],
+    "interior": []
+  },
 };

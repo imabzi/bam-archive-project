@@ -2,24 +2,26 @@
 
 Source: `D:\Design\Media\iran picture Docs`
 
+Additional source: `source-images`
+
 This file is rewritten by `npm run import:images`.
 
 ## Summary
 
-- Source folders matched to a project: **91**
-- Projects with imported images: **38** of 43
+- Source folders matched to a project: **95**
+- Projects with imported images: **42** of 47
 - Projects without source images: **5**
 - Unmatched source folders: **12**
 - Folders needing manual review: **6**
 - Folders set aside as not project photography: **3**
-- Images imported: **166** exterior, **115** interior, **0** other
+- Images imported: **194** exterior, **141** interior, **0** other
 - Images flagged as not visually reviewed: **0**
 
-Last run: 0 images written, 319 unchanged, 0 removed.
+Last run: 58 images written, 319 unchanged, 0 removed.
 
 ## Worth checking
 
-**Showing architectural renders only, because the archive holds no photographs:** BAM Maryam, Araz Hotel, Erfan Clinic, National Cancer Center, Nikan West Hospital, Sepid Hospital.
+**Showing architectural renders only, because the archive holds no photographs:** BAM Maryam, Araz Hotel, Erfan Clinic, National Cancer Center, Nikan West Hospital, Sepid Hospital, 311, B77, X11, Tajik Mall.
 
 **Showing some renders alongside photographs:** BAM Fereshteh.
 
@@ -32,6 +34,9 @@ Last run: 0 images written, 319 unchanged, 0 removed.
 - **Boostan Asaluyeh:** The archive only holds construction-record photographs. Some carry a date stamp in the corner.
 - **BAM Center Shariati:** The archive only holds this project's photographs at 1080px.
 - **BAM Zafaraniyeh (Sarvestan):** The archive only holds this project's photographs at 1080px. Its higher-resolution files are renders, which were not used.
+- **B77:** The renders show the name "77 Boulevard" on the building.
+- **X11:** The folder holds no images of indoor spaces, so the page has no interior gallery.
+- **Tajik Mall:** The folder holds no images of indoor spaces, so the page has no interior gallery. Its files are under 1800px wide, and the renders show the name "Mall of Tajikistan" on the building.
 
 ## Folders assigned on evidence
 
@@ -668,6 +673,80 @@ Other imported: 0
 Cover selected: exterior-01.jpg
 ```
 
+### 311
+
+```text
+311
+Source folder: 311
+Exterior imported: 8
+Interior imported: 15
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
+- 23 of these are architectural renders rather than photographs.
+
+Skipped:
+
+- 4 — Outdoor amenity scene, neither a view of the building nor an interior
+- 1 — Close-up of one appliance
+
+### B77
+
+```text
+B77
+Source folder: B77
+Exterior imported: 8
+Interior imported: 11
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
+- 19 of these are architectural renders rather than photographs.
+- The renders show the name "77 Boulevard" on the building.
+
+Skipped:
+
+- 6 — Outdoor amenity scene, neither a view of the building nor an interior
+
+### X11
+
+```text
+X11
+Source folder: X11
+Exterior imported: 5
+Interior imported: 0
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
+- 5 of these are architectural renders rather than photographs.
+- The folder holds no images of indoor spaces, so the page has no interior gallery.
+
+Skipped:
+
+- 10 — Outdoor amenity scene, neither a view of the building nor an interior
+- 1 — Brochure page with printed text
+
+### Tajik Mall
+
+```text
+Tajik Mall
+Source folder: tajikmall
+Exterior imported: 7
+Interior imported: 0
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
+- Low resolution, under 1600px: `tajikmall/755fdfed-ebbf-4e52-9747-e93610a7dcbc.png`
+- 7 of these are architectural renders rather than photographs.
+- The folder holds no images of indoor spaces, so the page has no interior gallery. Its files are under 1800px wide, and the renders show the name "Mall of Tajikistan" on the building.
+
+Skipped:
+
+- 1 — Near-duplicate of the cover
+
 ## Projects without source images
 
 - **BAM Niavaran 01** (بام نیاوران ۱)
@@ -716,13 +795,15 @@ To resolve one, add it to `FOLDER_DECISIONS` in `scripts/image-import.config.mjs
 - 225 — System or temporary file
 - 205 — Camera raw file
 - 11 — Image format outside the supported list
-- 5 — Video
+- 7 — Video
+- 4 — Document
 - 1 — Design source file
-- 1 — Document
 
 ## How the import works
 
-**The source is read-only.** The script only reads from the source directory. Images are converted into `public/projects`.
+**The source is read-only.** The script only reads from the source directories. Images are converted into `public/projects`.
+
+**Originals stay out of the site.** Folders that are not in the main source live in `source-images`, which is gitignored. Never place originals in `public`: everything there is published.
 
 **Rerunning is safe and deterministic.** `scripts/.image-import-manifest.json` records every file the script made and which source file it came from.
 A rerun keeps files that are still correct, rewrites those that changed and deletes only files it made itself that are no longer selected.

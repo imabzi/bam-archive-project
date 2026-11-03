@@ -9,7 +9,7 @@ export type LocalizedText = Record<Language, string>;
 // language; the UI never falls back to the wrong language.
 export type PartialLocalizedText = Partial<LocalizedText>;
 
-export type CategoryId = "residential" | "commercial-leisure" | "large-scale" | "healthcare";
+export type CategoryId = "residential" | "commercial-leisure" | "large-scale" | "healthcare" | "international";
 
 export type ProjectCategory = LocalizedText & { id: CategoryId };
 
@@ -66,9 +66,10 @@ export type ProjectContent = Partial<Pick<Project, "description" | "images" | "l
 
 export const projectCategories: Record<CategoryId, ProjectCategory> = {
   residential: { id: "residential", en: "Residential", fa: "مسکونی" },
-  "commercial-leisure": { id: "commercial-leisure", en: "Commercial & Leisure", fa: "تجاری و تفریحی" },
-  "large-scale": { id: "large-scale", en: "Large-Scale Development", fa: "توسعه بزرگ‌مقیاس" },
-  healthcare: { id: "healthcare", en: "Healthcare", fa: "پزشکی" },
+  "commercial-leisure": { id: "commercial-leisure", en: "Commercial", fa: "تجاری" },
+  healthcare: { id: "healthcare", en: "Medical", fa: "پزشکی" },
+  international: { id: "international", en: "International", fa: "بین‌المللی" },
+  "large-scale": { id: "large-scale", en: "Developments", fa: "پروژه‌های کلان" },
 };
 
 const exteriorPlaceholders = [
@@ -132,6 +133,10 @@ const raw: ReadonlyArray<readonly [string, string, string, CategoryId]> = [
   ["H04","بیمارستان نیکان غرب","Nikan West Hospital","healthcare"],
   ["H05","بیمارستان سپید","Sepid Hospital","healthcare"],
   ["H06","درمانگاه تخصصی شهرداری منطقه ۱۴","District 14 Specialized Clinic","healthcare"],
+  ["I01","311","311","international"],
+  ["I02","B77","B77","international"],
+  ["I03","X11","X11","international"],
+  ["I04","تاجیک مال","Tajik Mall","international"],
 ];
 
 function slugify(value: string) {

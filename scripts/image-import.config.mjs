@@ -2,6 +2,10 @@
 
 export const DEFAULT_SOURCE = "D:\\Design\\Media\\iran picture Docs";
 
+// Project folders that are not in the archive above, relative to the project root.
+// It is gitignored, so large originals and documents never reach the site.
+export const ADDITIONAL_SOURCE = "source-images";
+
 export const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".tif", ".tiff"]);
 
 export const OUTPUT = {
@@ -47,6 +51,7 @@ export const PROJECT_ALIASES = {
   H03: ["national cancer institute medical centers"],
   H04: ["west nikan hospital", "بیمارستان نیکان غرب"],
   H06: ["clinic 14", "کلینیک شهرداری منطقه 14"],
+  I04: ["tajikmall"],
 };
 
 // Facts a person should know about a project's images, shown in the report.
@@ -56,6 +61,9 @@ export const PROJECT_NOTES = {
   M03: "The archive only holds construction-record photographs. Some carry a date stamp in the corner.",
   T04: "The archive only holds this project's photographs at 1080px.",
   R11: "The archive only holds this project's photographs at 1080px. Its higher-resolution files are renders, which were not used.",
+  I02: 'The renders show the name "77 Boulevard" on the building.',
+  I03: "The folder holds no images of indoor spaces, so the page has no interior gallery.",
+  I04: 'The folder holds no images of indoor spaces, so the page has no interior gallery. Its files are under 1800px wide, and the renders show the name "Mall of Tajikistan" on the building.',
 };
 
 // Decisions the name matcher cannot make, keyed by path relative to the source.
