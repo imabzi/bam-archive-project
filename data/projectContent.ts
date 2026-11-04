@@ -251,6 +251,21 @@ export const projectContent: Record<string, ProjectContent> = {
       fa: "هتلی در ساحل دریای خزر در مازندران، میان نوشهر و نور، با بیش از ۵۰۰ واحد اقامتی، ساخته‌شده توسط گروه بام.",
     },
     location: { city: { en: "Nowshahr", fa: "نوشهر" }, country: iran },
+    // Placed by hand in public/projects/araz-hotel. The image import does not manage them.
+    images: {
+      cover: "/projects/araz-hotel/card.jpg",
+      exterior: [
+        "/projects/araz-hotel/main.jpg",
+        "/projects/araz-hotel/67d2750c972742198940e80e715c0425.jpg",
+        "/projects/araz-hotel/پدل-scaled.webp",
+        "/projects/araz-hotel/رستوران-کسپی.webp",
+      ],
+      interior: [
+        "/projects/araz-hotel/e663aaf0-67aa-44cc-a914-fc1871379ef1.webp",
+        "/projects/araz-hotel/f5f0cb13-50cc-46ce-8ddf-0f50fa4b3521.webp",
+        "/projects/araz-hotel/about-us-5-scaled.jpg",
+      ],
+    },
   },
   M01: {
     description: {

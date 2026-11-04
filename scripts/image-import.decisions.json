@@ -391,13 +391,6 @@
     "35d3907fedea8776"
    ]
   },
-  "T11": {
-   "exterior": [
-    "55c33073701cc4cb",
-    "2beea084d6d1e711",
-    "b1bda0e0bcc7dcd5"
-   ]
-  },
   "M01": {
    "exterior": [
     "cc1b024be3993bf8",
@@ -1507,6 +1500,11 @@
   ],
   "Near-duplicate of the cover": [
    "be6abbbf915fd59a"
+  ],
+  "Replaced by the images placed in public/projects/araz-hotel": [
+   "55c33073701cc4cb",
+   "2beea084d6d1e711",
+   "b1bda0e0bcc7dcd5"
   ]
  },
  "renders": [
@@ -1516,9 +1514,6 @@
   "5986a942e32c2228",
   "a8bbf1ff981fb5af",
   "bf74c69f916d705a",
-  "b1bda0e0bcc7dcd5",
-  "2beea084d6d1e711",
-  "55c33073701cc4cb",
   "ae022d3f948a8f15",
   "256c51695a2612b6",
   "d3ee5345d59145a5",

@@ -456,16 +456,6 @@ export const importedProjectImages: Partial<Record<string, ProjectImages>> = {
     ],
     "interior": []
   },
-  T11: {
-    "cover": "/projects/araz-hotel/exterior/exterior-01.jpg",
-    "card": "/projects/araz-hotel/card.jpg",
-    "exterior": [
-      "/projects/araz-hotel/exterior/exterior-01.jpg",
-      "/projects/araz-hotel/exterior/exterior-02.jpg",
-      "/projects/araz-hotel/exterior/exterior-03.jpg"
-    ],
-    "interior": []
-  },
   M01: {
     "cover": "/projects/boostan-hashtgerd-1002-unit-project/exterior/exterior-01.jpg",
     "card": "/projects/boostan-hashtgerd-1002-unit-project/card.jpg",

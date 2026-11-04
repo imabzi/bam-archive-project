@@ -9,19 +9,19 @@ This file is rewritten by `npm run import:images`.
 ## Summary
 
 - Source folders matched to a project: **95**
-- Projects with imported images: **42** of 47
-- Projects without source images: **5**
+- Projects with imported images: **41** of 47
+- Projects without source images: **6**
 - Unmatched source folders: **12**
 - Folders needing manual review: **6**
 - Folders set aside as not project photography: **3**
-- Images imported: **194** exterior, **141** interior, **0** other
+- Images imported: **191** exterior, **141** interior, **0** other
 - Images flagged as not visually reviewed: **0**
 
-Last run: 58 images written, 319 unchanged, 0 removed.
+Last run: 0 images written, 373 unchanged, 4 removed.
 
 ## Worth checking
 
-**Showing architectural renders only, because the archive holds no photographs:** BAM Maryam, Araz Hotel, Erfan Clinic, National Cancer Center, Nikan West Hospital, Sepid Hospital, 311, B77, X11, Tajik Mall.
+**Showing architectural renders only, because the archive holds no photographs:** BAM Maryam, Erfan Clinic, National Cancer Center, Nikan West Hospital, Sepid Hospital, 311, B77, X11, Tajik Mall.
 
 **Showing some renders alongside photographs:** BAM Fereshteh.
 
@@ -34,6 +34,7 @@ Last run: 58 images written, 319 unchanged, 0 removed.
 - **Boostan Asaluyeh:** The archive only holds construction-record photographs. Some carry a date stamp in the corner.
 - **BAM Center Shariati:** The archive only holds this project's photographs at 1080px.
 - **BAM Zafaraniyeh (Sarvestan):** The archive only holds this project's photographs at 1080px. Its higher-resolution files are renders, which were not used.
+- **Araz Hotel:** Its images were placed by hand in public/projects/araz-hotel and are listed in data/projectContent.ts, so this import does not manage them.
 - **B77:** The renders show the name "77 Boulevard" on the building.
 - **X11:** The folder holds no images of indoor spaces, so the page has no interior gallery.
 - **Tajik Mall:** The folder holds no images of indoor spaces, so the page has no interior gallery. Its files are under 1800px wide, and the renders show the name "Mall of Tajikistan" on the building.
@@ -504,24 +505,6 @@ Skipped:
 
 - 3 — Not selected on visual review
 
-### Araz Hotel
-
-```text
-Araz Hotel
-Source folder: HOTELL ARAZ
-Exterior imported: 3
-Interior imported: 0
-Other imported: 0
-Cover selected: exterior-01.jpg
-```
-
-- 3 of these are architectural renders rather than photographs.
-
-Skipped:
-
-- 12 — Not selected on visual review
-- 2 — Near-duplicate of a better version
-
 ### Boostan Hashtgerd 1002-Unit Project
 
 ```text
@@ -754,6 +737,7 @@ Skipped:
 - **BAM Mahtab** (بام مهتاب)
 - **BAM Center Farmanieh** (بام سنتر فرمانیه)
 - **Avaan Center** (آوان سنتر)
+- **Araz Hotel** (هتل آراز) Its images were placed by hand in public/projects/araz-hotel and are listed in data/projectContent.ts, so this import does not manage them.
 
 ## Unmatched source folders
 
