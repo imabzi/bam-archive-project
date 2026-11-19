@@ -311,6 +311,36 @@ export const importedProjectImages: Partial<Record<string, ProjectImages>> = {
       "/projects/bam-maryam/interior/interior-02.jpg"
     ]
   },
+  R23: {
+    "cover": "/projects/bam-darbandsar/exterior/exterior-01.jpg",
+    "card": "/projects/bam-darbandsar/card.jpg",
+    "exterior": [
+      "/projects/bam-darbandsar/exterior/exterior-01.jpg",
+      "/projects/bam-darbandsar/exterior/exterior-02.jpg",
+      "/projects/bam-darbandsar/exterior/exterior-03.jpg"
+    ],
+    "interior": []
+  },
+  R24: {
+    "cover": "/projects/bam-address-chalous/exterior/exterior-01.jpg",
+    "card": "/projects/bam-address-chalous/card.jpg",
+    "exterior": [
+      "/projects/bam-address-chalous/exterior/exterior-01.jpg",
+      "/projects/bam-address-chalous/exterior/exterior-02.jpg",
+      "/projects/bam-address-chalous/exterior/exterior-03.jpg",
+      "/projects/bam-address-chalous/exterior/exterior-04.jpg",
+      "/projects/bam-address-chalous/exterior/exterior-05.jpg",
+      "/projects/bam-address-chalous/exterior/exterior-06.jpg",
+      "/projects/bam-address-chalous/exterior/exterior-07.jpg",
+      "/projects/bam-address-chalous/exterior/exterior-08.jpg"
+    ],
+    "interior": [
+      "/projects/bam-address-chalous/interior/interior-01.jpg",
+      "/projects/bam-address-chalous/interior/interior-02.jpg",
+      "/projects/bam-address-chalous/interior/interior-03.jpg",
+      "/projects/bam-address-chalous/interior/interior-04.jpg"
+    ]
+  },
   T01: {
     "cover": "/projects/bam-center-head-office/exterior/exterior-01.jpg",
     "card": "/projects/bam-center-head-office/card.jpg",
@@ -332,6 +362,52 @@ export const importedProjectImages: Partial<Record<string, ProjectImages>> = {
       "/projects/bam-center-head-office/interior/interior-06.jpg",
       "/projects/bam-center-head-office/interior/interior-07.jpg",
       "/projects/bam-center-head-office/interior/interior-08.jpg"
+    ]
+  },
+  T02: {
+    "cover": "/projects/bam-center-farmanieh/exterior/exterior-01.jpg",
+    "card": "/projects/bam-center-farmanieh/card.jpg",
+    "exterior": [
+      "/projects/bam-center-farmanieh/exterior/exterior-01.jpg",
+      "/projects/bam-center-farmanieh/exterior/exterior-02.jpg",
+      "/projects/bam-center-farmanieh/exterior/exterior-03.jpg",
+      "/projects/bam-center-farmanieh/exterior/exterior-04.jpg",
+      "/projects/bam-center-farmanieh/exterior/exterior-05.jpg",
+      "/projects/bam-center-farmanieh/exterior/exterior-06.jpg",
+      "/projects/bam-center-farmanieh/exterior/exterior-07.jpg",
+      "/projects/bam-center-farmanieh/exterior/exterior-08.jpg"
+    ],
+    "interior": [
+      "/projects/bam-center-farmanieh/interior/interior-01.jpg",
+      "/projects/bam-center-farmanieh/interior/interior-02.jpg",
+      "/projects/bam-center-farmanieh/interior/interior-03.jpg",
+      "/projects/bam-center-farmanieh/interior/interior-04.jpg",
+      "/projects/bam-center-farmanieh/interior/interior-05.jpg",
+      "/projects/bam-center-farmanieh/interior/interior-06.jpg",
+      "/projects/bam-center-farmanieh/interior/interior-07.jpg",
+      "/projects/bam-center-farmanieh/interior/interior-08.jpg"
+    ]
+  },
+  T03: {
+    "cover": "/projects/avaan-center/exterior/exterior-01.jpg",
+    "card": "/projects/avaan-center/card.jpg",
+    "exterior": [
+      "/projects/avaan-center/exterior/exterior-01.jpg",
+      "/projects/avaan-center/exterior/exterior-02.jpg",
+      "/projects/avaan-center/exterior/exterior-03.jpg",
+      "/projects/avaan-center/exterior/exterior-04.jpg",
+      "/projects/avaan-center/exterior/exterior-05.jpg",
+      "/projects/avaan-center/exterior/exterior-06.jpg",
+      "/projects/avaan-center/exterior/exterior-07.jpg"
+    ],
+    "interior": [
+      "/projects/avaan-center/interior/interior-01.jpg",
+      "/projects/avaan-center/interior/interior-02.jpg",
+      "/projects/avaan-center/interior/interior-03.jpg",
+      "/projects/avaan-center/interior/interior-04.jpg",
+      "/projects/avaan-center/interior/interior-05.jpg",
+      "/projects/avaan-center/interior/interior-06.jpg",
+      "/projects/avaan-center/interior/interior-07.jpg"
     ]
   },
   T04: {
@@ -456,6 +532,36 @@ export const importedProjectImages: Partial<Record<string, ProjectImages>> = {
     ],
     "interior": []
   },
+  T12: {
+    "cover": "/projects/bam-center-bokharest/exterior/exterior-01.jpg",
+    "card": "/projects/bam-center-bokharest/card.jpg",
+    "exterior": [
+      "/projects/bam-center-bokharest/exterior/exterior-01.jpg",
+      "/projects/bam-center-bokharest/exterior/exterior-02.jpg",
+      "/projects/bam-center-bokharest/exterior/exterior-03.jpg"
+    ],
+    "interior": []
+  },
+  T13: {
+    "cover": "/projects/bam-center-vesali/exterior/exterior-01.jpg",
+    "card": "/projects/bam-center-vesali/card.jpg",
+    "exterior": [
+      "/projects/bam-center-vesali/exterior/exterior-01.jpg",
+      "/projects/bam-center-vesali/exterior/exterior-02.jpg",
+      "/projects/bam-center-vesali/exterior/exterior-03.jpg"
+    ],
+    "interior": []
+  },
+  T14: {
+    "cover": "/projects/bam-address-shiraz/exterior/exterior-01.jpg",
+    "card": "/projects/bam-address-shiraz/card.jpg",
+    "exterior": [
+      "/projects/bam-address-shiraz/exterior/exterior-01.jpg",
+      "/projects/bam-address-shiraz/exterior/exterior-02.jpg",
+      "/projects/bam-address-shiraz/exterior/exterior-03.jpg"
+    ],
+    "interior": []
+  },
   M01: {
     "cover": "/projects/boostan-hashtgerd-1002-unit-project/exterior/exterior-01.jpg",
     "card": "/projects/boostan-hashtgerd-1002-unit-project/card.jpg",
@@ -499,6 +605,21 @@ export const importedProjectImages: Partial<Record<string, ProjectImages>> = {
       "/projects/golestan-meshgin-shahr/exterior/exterior-01.jpg",
       "/projects/golestan-meshgin-shahr/exterior/exterior-02.jpg",
       "/projects/golestan-meshgin-shahr/exterior/exterior-03.jpg"
+    ],
+    "interior": []
+  },
+  M05: {
+    "cover": "/projects/bam-land-shiraz-township/exterior/exterior-01.jpg",
+    "card": "/projects/bam-land-shiraz-township/card.jpg",
+    "exterior": [
+      "/projects/bam-land-shiraz-township/exterior/exterior-01.jpg",
+      "/projects/bam-land-shiraz-township/exterior/exterior-02.jpg",
+      "/projects/bam-land-shiraz-township/exterior/exterior-03.jpg",
+      "/projects/bam-land-shiraz-township/exterior/exterior-04.jpg",
+      "/projects/bam-land-shiraz-township/exterior/exterior-05.jpg",
+      "/projects/bam-land-shiraz-township/exterior/exterior-06.jpg",
+      "/projects/bam-land-shiraz-township/exterior/exterior-07.jpg",
+      "/projects/bam-land-shiraz-township/exterior/exterior-08.jpg"
     ],
     "interior": []
   },
@@ -557,6 +678,55 @@ export const importedProjectImages: Partial<Record<string, ProjectImages>> = {
       "/projects/district-14-specialized-clinic/interior/interior-01.jpg",
       "/projects/district-14-specialized-clinic/interior/interior-02.jpg"
     ]
+  },
+  H07: {
+    "cover": "/projects/tehrani-clinic/exterior/exterior-01.jpg",
+    "card": "/projects/tehrani-clinic/card.jpg",
+    "exterior": [
+      "/projects/tehrani-clinic/exterior/exterior-01.jpg",
+      "/projects/tehrani-clinic/exterior/exterior-02.jpg",
+      "/projects/tehrani-clinic/exterior/exterior-03.jpg",
+      "/projects/tehrani-clinic/exterior/exterior-04.jpg"
+    ],
+    "interior": []
+  },
+  H08: {
+    "cover": "/projects/nikan-clinic/exterior/exterior-01.jpg",
+    "card": "/projects/nikan-clinic/card.jpg",
+    "exterior": [
+      "/projects/nikan-clinic/exterior/exterior-01.jpg",
+      "/projects/nikan-clinic/exterior/exterior-02.jpg",
+      "/projects/nikan-clinic/exterior/exterior-03.jpg",
+      "/projects/nikan-clinic/exterior/exterior-04.jpg"
+    ],
+    "interior": [
+      "/projects/nikan-clinic/interior/interior-01.jpg",
+      "/projects/nikan-clinic/interior/interior-02.jpg",
+      "/projects/nikan-clinic/interior/interior-03.jpg",
+      "/projects/nikan-clinic/interior/interior-04.jpg",
+      "/projects/nikan-clinic/interior/interior-05.jpg",
+      "/projects/nikan-clinic/interior/interior-06.jpg",
+      "/projects/nikan-clinic/interior/interior-07.jpg",
+      "/projects/nikan-clinic/interior/interior-08.jpg"
+    ]
+  },
+  H09: {
+    "cover": "/projects/nikan-negin-hospital/exterior/exterior-01.jpg",
+    "card": "/projects/nikan-negin-hospital/card.jpg",
+    "exterior": [
+      "/projects/nikan-negin-hospital/exterior/exterior-01.jpg",
+      "/projects/nikan-negin-hospital/exterior/exterior-02.jpg"
+    ],
+    "interior": []
+  },
+  H10: {
+    "cover": "/projects/nikan-hospital-expansion/exterior/exterior-01.jpg",
+    "card": "/projects/nikan-hospital-expansion/card.jpg",
+    "exterior": [
+      "/projects/nikan-hospital-expansion/exterior/exterior-01.jpg",
+      "/projects/nikan-hospital-expansion/exterior/exterior-02.jpg"
+    ],
+    "interior": []
   },
   I01: {
     "cover": "/projects/311/exterior/exterior-01.jpg",

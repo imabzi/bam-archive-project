@@ -728,6 +728,74 @@
    "sourceSha": "5986a942e32c22280ef6522ae229a05f13fc5c25a831d50ca5ebcfcaa1ed5cb8",
    "profile": "1400/80/inset-0.05"
   },
+  "public/projects/bam-darbandsar/exterior/exterior-01.jpg": {
+   "sourceSha": "a7679d655590ac550264959c91ae794cc32d8e94eb511e1fd13a6838c82a0bd9",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-darbandsar/exterior/exterior-02.jpg": {
+   "sourceSha": "3421f209af0e8b3852ebf1cba267df6381417965503e4003c924925dc06226e3",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-darbandsar/exterior/exterior-03.jpg": {
+   "sourceSha": "b1f46d8da0f1a78b5c978991c73a6b332e7bc473affb0c3c7a71e59829ca528b",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-darbandsar/card.jpg": {
+   "sourceSha": "a7679d655590ac550264959c91ae794cc32d8e94eb511e1fd13a6838c82a0bd9",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-01.jpg": {
+   "sourceSha": "2182f858d1e83707150f8207f470c6df71483264977ae101dc721e0071674f31",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-02.jpg": {
+   "sourceSha": "052df2669e46c9a7a18f46cbcfec96e53efd7fc5195c1a515628e6e2981fd4da",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-03.jpg": {
+   "sourceSha": "80f3ea9c937caa7ad3a02733e3ad6da889ed1becd8191958ca12c7f1746b73d7",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-04.jpg": {
+   "sourceSha": "310b79af1cdd61c98de880da6710368c85afe49475f8bb2311c4a7a732b9dd83",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-05.jpg": {
+   "sourceSha": "6358f72e8af45031c40f57fda0b2e507f2e96e127e44ab1fa3e7add3dc284587",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-06.jpg": {
+   "sourceSha": "2fcad4878baf56268264838bed8266dcc98cea416376578090ef181e03e3e8b4",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-07.jpg": {
+   "sourceSha": "9811c4f4685e8611e2ddb6530b0c876d39c0c3aac45f938930d2f079b47076e5",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-08.jpg": {
+   "sourceSha": "146721ba5317cdee56a8dcc543b6e2ee5afeb7e3e92af8e05943aa911f645a3c",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-chalous/interior/interior-01.jpg": {
+   "sourceSha": "8e3b033c26e8e4719caf87cf863a2c72c5b961413965a8ef56f9ff41508f8ca7",
+   "profile": "2000/84/inset-0.012"
+  },
+  "public/projects/bam-address-chalous/interior/interior-02.jpg": {
+   "sourceSha": "8a63d18b2b608b7470763773d7e1b39738af077494586b067ac57e83b4a50e70",
+   "profile": "2000/84/inset-0.012"
+  },
+  "public/projects/bam-address-chalous/interior/interior-03.jpg": {
+   "sourceSha": "234a7651b2d26e24da6358e7c52502d3ce33b52dffb85864e51074df94b8a4d1",
+   "profile": "2000/84/inset-0.012"
+  },
+  "public/projects/bam-address-chalous/interior/interior-04.jpg": {
+   "sourceSha": "0d1fa6b21ac847a39e43e52b6fcf8f112d407b73a9dbfee153eb52a0b1e247a5",
+   "profile": "2000/84/inset-0.012"
+  },
+  "public/projects/bam-address-chalous/card.jpg": {
+   "sourceSha": "2182f858d1e83707150f8207f470c6df71483264977ae101dc721e0071674f31",
+   "profile": "1400/80"
+  },
   "public/projects/bam-center-head-office/exterior/exterior-01.jpg": {
    "sourceSha": "832c9c5c50d1dab6fcb7c46fc8dc50ed2c67a80483d8ba8980bfe42046c08b28",
    "profile": "2800/84"
@@ -790,6 +858,134 @@
   },
   "public/projects/bam-center-head-office/card.jpg": {
    "sourceSha": "832c9c5c50d1dab6fcb7c46fc8dc50ed2c67a80483d8ba8980bfe42046c08b28",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-01.jpg": {
+   "sourceSha": "da982f743098eb707bde3612c9246dd1d43d397a0305584c1bd5cf5e857a7608",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-02.jpg": {
+   "sourceSha": "202df21e3236da5715ee85e657bedd51db2d98827bd3f315045a5af278eaeca2",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-03.jpg": {
+   "sourceSha": "6010fdf19f99e98b50b74dcf78f0d3c5395bce3d02130e36bf4b438366f4a986",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-04.jpg": {
+   "sourceSha": "d0b81c84167e44da767f7e3386b72a7a13cc3c0479f37ce9d08baeca3cf1be83",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-05.jpg": {
+   "sourceSha": "77af8414ad24568e5d0d8c921262c5d0d018385d2dff5d968e5220751ac248e3",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-06.jpg": {
+   "sourceSha": "decfa7bdc3ae841d5fbb194705f433d2d0563dd8d60673c9f45a641cd2df5b22",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-07.jpg": {
+   "sourceSha": "5e3b7a130a0b4bd1413b1d040c0a13cc8b6517b4f921ceb2270da69319705084",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-08.jpg": {
+   "sourceSha": "5dcbf4bff10c9416a116b274d74da68d1c3a1aab4ad673262f653aa90471f14b",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-01.jpg": {
+   "sourceSha": "fff51412925c763a2019b118ef3fc3e497c87079d0e4337baae10702347f618f",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-02.jpg": {
+   "sourceSha": "bd349497f549f86d5e88ff3e8f64a118ad48232345cb4ba052a034830898b800",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-03.jpg": {
+   "sourceSha": "6b57f589bc0565313eecfdc201ed66844463d736ca1faf51c690bf41431bbdbe",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-04.jpg": {
+   "sourceSha": "96e1be770e58b8e8d9a11cdb325235dd591d02312fba82bbcbb61becab051378",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-05.jpg": {
+   "sourceSha": "bb947e4334d1ad855542744b2481958229ccc6b3adf15d6e4e3fe1adf906d003",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-06.jpg": {
+   "sourceSha": "3b22e1b94ec587cc3989582fe86a0ae70b1fda81d237ca37b8523a03105b5c80",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-07.jpg": {
+   "sourceSha": "00da4ef90d597b414ef89f6562007e73b3f47c005d6642dcba856f35a54b9cba",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-08.jpg": {
+   "sourceSha": "708c8746ed2a081a53ef7f3c9a39fba66024ac878aaf7e236dc73a048826b1e9",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/card.jpg": {
+   "sourceSha": "da982f743098eb707bde3612c9246dd1d43d397a0305584c1bd5cf5e857a7608",
+   "profile": "1400/80"
+  },
+  "public/projects/avaan-center/exterior/exterior-01.jpg": {
+   "sourceSha": "04d056263e3920ef10a314e9c44f0b16c978ca75896f9c596acbd48e21a79a1b",
+   "profile": "2800/84"
+  },
+  "public/projects/avaan-center/exterior/exterior-02.jpg": {
+   "sourceSha": "16b246f1e71e1ef7c794509b9c25be26e154518397f0944308664f862715de7f",
+   "profile": "2800/84"
+  },
+  "public/projects/avaan-center/exterior/exterior-03.jpg": {
+   "sourceSha": "4a7599d0778fe8566ea0d1fc5a6bc6ac5d7231062cc26b81e5dd5ecb563d9a09",
+   "profile": "2800/84"
+  },
+  "public/projects/avaan-center/exterior/exterior-04.jpg": {
+   "sourceSha": "0a69274fc634037b9682ac0d913d474e7756e10251ee0705e04c36db4c2efe4f",
+   "profile": "2800/84"
+  },
+  "public/projects/avaan-center/exterior/exterior-05.jpg": {
+   "sourceSha": "e68a60e0a2169f8bd561c30ed7c9284f53ec410d26370887bdc9fa4be106279f",
+   "profile": "2800/84"
+  },
+  "public/projects/avaan-center/exterior/exterior-06.jpg": {
+   "sourceSha": "6e757c68900c8f76dec1ca929529d251a539d548a042f975d91bc978d184d6d4",
+   "profile": "2800/84"
+  },
+  "public/projects/avaan-center/exterior/exterior-07.jpg": {
+   "sourceSha": "bea29c95b9de3397cf01a62ee53c88f4aa59b29aac66894a55095023bb329e15",
+   "profile": "2800/84"
+  },
+  "public/projects/avaan-center/interior/interior-01.jpg": {
+   "sourceSha": "f136b81a9524922c98858825bb049070a7dea49fb904554fc46354489271366e",
+   "profile": "2000/84"
+  },
+  "public/projects/avaan-center/interior/interior-02.jpg": {
+   "sourceSha": "9a478965fbd20b1164d7085726564b4f03de5d5ea885d2b66ff797bd77d8e30f",
+   "profile": "2000/84"
+  },
+  "public/projects/avaan-center/interior/interior-03.jpg": {
+   "sourceSha": "5d8d692b24e07bebce09fd56df94455cf5e8aadd9314cad67ae35bf9f2ac0ee7",
+   "profile": "2000/84"
+  },
+  "public/projects/avaan-center/interior/interior-04.jpg": {
+   "sourceSha": "8e270b1381f135e92f2abd6947cfb2fbfac0b7c408e02895a6239f8c0d57dee9",
+   "profile": "2000/84"
+  },
+  "public/projects/avaan-center/interior/interior-05.jpg": {
+   "sourceSha": "955fc6ae9f08eb4c1f31f7579b6154660b19e8db0e784cbe81c5d5941c16fa7d",
+   "profile": "2000/84"
+  },
+  "public/projects/avaan-center/interior/interior-06.jpg": {
+   "sourceSha": "c7fe402b993e18bbf95c13167fbcefa1c80b680469d630daf3762169ed1a0131",
+   "profile": "2000/84"
+  },
+  "public/projects/avaan-center/interior/interior-07.jpg": {
+   "sourceSha": "be5b805268d9db96cda2c9e8206e44fb89cf8f86c9534dd7d19305c0ff8574a5",
+   "profile": "2000/84"
+  },
+  "public/projects/avaan-center/card.jpg": {
+   "sourceSha": "04d056263e3920ef10a314e9c44f0b16c978ca75896f9c596acbd48e21a79a1b",
    "profile": "1400/80"
   },
   "public/projects/bam-center-shariati/exterior/exterior-01.jpg": {
@@ -1096,6 +1292,54 @@
    "sourceSha": "fb7dd2c01c40f6c3d3ae6e5d9a3f5548690032b9c5af634a8edb83cfbaa2a808",
    "profile": "1400/80"
   },
+  "public/projects/bam-center-bokharest/exterior/exterior-01.jpg": {
+   "sourceSha": "4d1935adb43937816467bdcc20bf7bf0c028ed69a520a5b4a20c271dd7ae832f",
+   "profile": "2800/84/inset-0.088"
+  },
+  "public/projects/bam-center-bokharest/exterior/exterior-02.jpg": {
+   "sourceSha": "d229d71bcf5736c4471adcc29407d9c72bbb4ba07c379c9bee30b2bb7838f063",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-bokharest/exterior/exterior-03.jpg": {
+   "sourceSha": "1c104638929d624810c3d29a8b18b5f81b76a4aba5f289635883cb4b8bf35779",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-bokharest/card.jpg": {
+   "sourceSha": "4d1935adb43937816467bdcc20bf7bf0c028ed69a520a5b4a20c271dd7ae832f",
+   "profile": "1400/80/inset-0.088"
+  },
+  "public/projects/bam-center-vesali/exterior/exterior-01.jpg": {
+   "sourceSha": "eddb7e662c77a9f53403f54e492d0ae49a0a45cb56c6d5efc09c504580d7a361",
+   "profile": "2800/84/inset-0.06"
+  },
+  "public/projects/bam-center-vesali/exterior/exterior-02.jpg": {
+   "sourceSha": "f95511efab46d8e5149facf464337dcc297aa475b0488465f94dad53364946ea",
+   "profile": "2800/84/inset-0.075"
+  },
+  "public/projects/bam-center-vesali/exterior/exterior-03.jpg": {
+   "sourceSha": "7ccd3505caf6ea594f2f96f649b93ba558d73745aeb02f44e69739a93d72bbcd",
+   "profile": "2800/84/inset-0.065"
+  },
+  "public/projects/bam-center-vesali/card.jpg": {
+   "sourceSha": "eddb7e662c77a9f53403f54e492d0ae49a0a45cb56c6d5efc09c504580d7a361",
+   "profile": "1400/80/inset-0.06"
+  },
+  "public/projects/bam-address-shiraz/exterior/exterior-01.jpg": {
+   "sourceSha": "42f0b2bf681f528685719284b5af53c8b89f873eabc18b2ad25502568567434c",
+   "profile": "2800/84/inset-0.035"
+  },
+  "public/projects/bam-address-shiraz/exterior/exterior-02.jpg": {
+   "sourceSha": "28ea38fc8e59522d4320c7bd0b24886922fff0955737ac30aa5229c04c1b6950",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-shiraz/exterior/exterior-03.jpg": {
+   "sourceSha": "800c2fb34ffd06edf498dd9db8c8ba47c853a337ce1a92e87837ff3d10270141",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-shiraz/card.jpg": {
+   "sourceSha": "42f0b2bf681f528685719284b5af53c8b89f873eabc18b2ad25502568567434c",
+   "profile": "1400/80/inset-0.035"
+  },
   "public/projects/boostan-hashtgerd-1002-unit-project/exterior/exterior-01.jpg": {
    "sourceSha": "cc1b024be3993bf80a82b9c013ecf777d852c54f37575e04bcd75cddc82c367c",
    "profile": "2800/84"
@@ -1184,6 +1428,42 @@
    "sourceSha": "1021568a6ca125a47a5458ee2ed0d8852a6332ff23d771fe3e448b5a63b8de19",
    "profile": "1400/80"
   },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-01.jpg": {
+   "sourceSha": "8329644eca4520fc52f44112e99916b0e9d09a43f4f1097254c9aa06c4865863",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-02.jpg": {
+   "sourceSha": "9f37bda5ad9a8813028598ede2216d897ba2d313acfe77073bcfb1a2d0de041c",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-03.jpg": {
+   "sourceSha": "f8c5e0fabf886e159879623fccd2dc2e11de717bcf98df58ae9bae7b00bf6a7a",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-04.jpg": {
+   "sourceSha": "cedd5fdc06dfe0d13d4b830cda20c28b71311a093c119b8e9657931550fea00e",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-05.jpg": {
+   "sourceSha": "56687f4eee110862ae9ecfa774810e19a8e8fc505b01e273a4e300c9fac2c9aa",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-06.jpg": {
+   "sourceSha": "f90f869efd649b0ad66814aa997100137c12e6e050e148179d285188bf69fb5c",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-07.jpg": {
+   "sourceSha": "b5c9b5f2c767c4894ac0b9af548370f4c94ae044197d7eedf2784ab8af2746d4",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-08.jpg": {
+   "sourceSha": "7db0ba390407ebdb42b047401319d3ee90b8da45f9bab7a7987d0a5a8d2fa980",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/card.jpg": {
+   "sourceSha": "8329644eca4520fc52f44112e99916b0e9d09a43f4f1097254c9aa06c4865863",
+   "profile": "1400/80/inset-0.04"
+  },
   "public/projects/nikan-hospital/exterior/exterior-01.jpg": {
    "sourceSha": "a34ebec7343a171bd15af3dfccae3c6f971a2108c1ed16a21a83d27e9feea720",
    "profile": "2800/84"
@@ -1259,6 +1539,102 @@
   "public/projects/district-14-specialized-clinic/card.jpg": {
    "sourceSha": "8320aa43bd14d3debe87148dd539b652309b8d4e732608780a263b328d781d98",
    "profile": "1400/80/inset-0.035"
+  },
+  "public/projects/tehrani-clinic/exterior/exterior-01.jpg": {
+   "sourceSha": "f00ae8825737e4f9d3bea8dc140a640866335dba1d05e948d0a3cf82530bed3e",
+   "profile": "2800/84"
+  },
+  "public/projects/tehrani-clinic/exterior/exterior-02.jpg": {
+   "sourceSha": "5bac8ee48e12ec6c77294d35b1d47394b11cd6d8049c17b8f6deb49064c19278",
+   "profile": "2800/84"
+  },
+  "public/projects/tehrani-clinic/exterior/exterior-03.jpg": {
+   "sourceSha": "b1c4ecd9f98b41f97a5a27a21488ae789a9d6400d605855b61f2cef6f3f9d60e",
+   "profile": "2800/84"
+  },
+  "public/projects/tehrani-clinic/exterior/exterior-04.jpg": {
+   "sourceSha": "fabba01164e2693c8a9ee2c555f014a499cc97e04f8a02227a343359a49d3f24",
+   "profile": "2800/84"
+  },
+  "public/projects/tehrani-clinic/card.jpg": {
+   "sourceSha": "f00ae8825737e4f9d3bea8dc140a640866335dba1d05e948d0a3cf82530bed3e",
+   "profile": "1400/80"
+  },
+  "public/projects/nikan-clinic/exterior/exterior-01.jpg": {
+   "sourceSha": "16431da04cc6aa591ea97615e02b1f0b93309b301d4003c42d2f68e2e4bf3306",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-clinic/exterior/exterior-02.jpg": {
+   "sourceSha": "d4925bd47b7674f8d88e643f0a21f8a54db64893078c1d1bd619b8c8731a5eaa",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-clinic/exterior/exterior-03.jpg": {
+   "sourceSha": "69aee354e64babfd91231e8facd0cc5b08a137472be5adb88af179434a6c0a3b",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-clinic/exterior/exterior-04.jpg": {
+   "sourceSha": "b8e5350a704acb0f592c2a619197d194f1f0a22381718c3151bc142021e271bc",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-01.jpg": {
+   "sourceSha": "ffe40323c33caa14ce272e3242c8c3aa415b68a1b9ef69f2f04827e8abd4f3dd",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-02.jpg": {
+   "sourceSha": "19d776df1502dea0081f781088b331904d1f0c7d22138c76b2f518917046cb3c",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-03.jpg": {
+   "sourceSha": "6885c43908ce15651a587c5e3df463a9443a2bb4cc46882ba02e1bd331a6d156",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-04.jpg": {
+   "sourceSha": "e252402a5893c4db39611a65deb4a4f55de8e8b1bc6a8222fb19ef540bce3863",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-05.jpg": {
+   "sourceSha": "e2dab2a4d52551159d95012703892da5aa0bb5a68831ba85d91319a4821024c4",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-06.jpg": {
+   "sourceSha": "c3b53308695238d0289247976fcdecb1a2baec6dd75e6cb5eacbd4aa0b40cd55",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-07.jpg": {
+   "sourceSha": "3e4fe751c6188bf6eaadbb19311e2244e73f905263f5a9aa8593118763197c44",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-08.jpg": {
+   "sourceSha": "27c627c66daa1753ae6a8f10aa9a00b1e098841a7c6820f27a58b5bc46be71ed",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/card.jpg": {
+   "sourceSha": "16431da04cc6aa591ea97615e02b1f0b93309b301d4003c42d2f68e2e4bf3306",
+   "profile": "1400/80"
+  },
+  "public/projects/nikan-negin-hospital/exterior/exterior-01.jpg": {
+   "sourceSha": "0a8c325822b9a1dc1ebc0d4d85492865a1d8cb5c37506406d633c722e7aae0a4",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-negin-hospital/exterior/exterior-02.jpg": {
+   "sourceSha": "5af124e6f7c9d5797bf1bc44a81eb82eb2a0b20febbbe5569db046ebbbbf6a2b",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-negin-hospital/card.jpg": {
+   "sourceSha": "0a8c325822b9a1dc1ebc0d4d85492865a1d8cb5c37506406d633c722e7aae0a4",
+   "profile": "1400/80"
+  },
+  "public/projects/nikan-hospital-expansion/exterior/exterior-01.jpg": {
+   "sourceSha": "09e17e86d4eb31ccc80e55b193c05e42ead5840ea0d2b191fa38ea23ea2ad5ac",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-hospital-expansion/exterior/exterior-02.jpg": {
+   "sourceSha": "d94c4dc2405e038d9c3944c02615be8d02733579582e1aff34af50993a8b3e86",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-hospital-expansion/card.jpg": {
+   "sourceSha": "09e17e86d4eb31ccc80e55b193c05e42ead5840ea0d2b191fa38ea23ea2ad5ac",
+   "profile": "1400/80"
   },
   "public/projects/311/exterior/exterior-01.jpg": {
    "sourceSha": "c048767b2fd84c07a3ddcff953fbd3b543ae06868bac000a8406c384b2cf795d",

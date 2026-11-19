@@ -537,6 +537,144 @@
     "76f490bf0be25cb1",
     "2b5e8e29a8916006"
    ]
+  },
+  "T02": {
+   "exterior": [
+    "da982f743098eb70",
+    "202df21e3236da57",
+    "6010fdf19f99e98b",
+    "d0b81c84167e44da",
+    "77af8414ad24568e",
+    "decfa7bdc3ae841d",
+    "5e3b7a130a0b4bd1",
+    "5dcbf4bff10c9416"
+   ],
+   "interior": [
+    "fff51412925c763a",
+    "bd349497f549f86d",
+    "6b57f589bc056531",
+    "96e1be770e58b8e8",
+    "bb947e4334d1ad85",
+    "3b22e1b94ec587cc",
+    "00da4ef90d597b41",
+    "708c8746ed2a081a"
+   ]
+  },
+  "T03": {
+   "exterior": [
+    "04d056263e3920ef",
+    "16b246f1e71e1ef7",
+    "4a7599d0778fe856",
+    "0a69274fc634037b",
+    "e68a60e0a2169f8b",
+    "6e757c68900c8f76",
+    "bea29c95b9de3397"
+   ],
+   "interior": [
+    "f136b81a9524922c",
+    "9a478965fbd20b11",
+    "5d8d692b24e07beb",
+    "8e270b1381f135e9",
+    "955fc6ae9f08eb4c",
+    "c7fe402b993e18bb",
+    "be5b805268d9db96"
+   ]
+  },
+  "T12": {
+   "exterior": [
+    "4d1935adb4393781",
+    "d229d71bcf5736c4",
+    "1c104638929d6248"
+   ]
+  },
+  "T13": {
+   "exterior": [
+    "eddb7e662c77a9f5",
+    "f95511efab46d8e5",
+    "7ccd3505caf6ea59"
+   ]
+  },
+  "T14": {
+   "exterior": [
+    "42f0b2bf681f5286",
+    "28ea38fc8e59522d",
+    "800c2fb34ffd06ed"
+   ]
+  },
+  "M05": {
+   "exterior": [
+    "8329644eca4520fc",
+    "9f37bda5ad9a8813",
+    "f8c5e0fabf886e15",
+    "cedd5fdc06dfe0d1",
+    "56687f4eee110862",
+    "f90f869efd649b0a",
+    "b5c9b5f2c767c489",
+    "7db0ba390407ebdb"
+   ]
+  },
+  "R24": {
+   "exterior": [
+    "2182f858d1e83707",
+    "052df2669e46c9a7",
+    "80f3ea9c937caa7a",
+    "310b79af1cdd61c9",
+    "6358f72e8af45031",
+    "2fcad4878baf5626",
+    "9811c4f4685e8611",
+    "146721ba5317cdee"
+   ],
+   "interior": [
+    "8e3b033c26e8e471",
+    "8a63d18b2b608b74",
+    "234a7651b2d26e24",
+    "0d1fa6b21ac847a3"
+   ]
+  },
+  "R23": {
+   "exterior": [
+    "a7679d655590ac55",
+    "3421f209af0e8b38",
+    "b1f46d8da0f1a78b"
+   ]
+  },
+  "H07": {
+   "exterior": [
+    "f00ae8825737e4f9",
+    "5bac8ee48e12ec6c",
+    "b1c4ecd9f98b41f9",
+    "fabba01164e2693c"
+   ]
+  },
+  "H08": {
+   "exterior": [
+    "16431da04cc6aa59",
+    "d4925bd47b7674f8",
+    "69aee354e64babfd",
+    "b8e5350a704acb0f"
+   ],
+   "interior": [
+    "ffe40323c33caa14",
+    "19d776df1502dea0",
+    "6885c43908ce1565",
+    "e252402a5893c4db",
+    "e2dab2a4d5255115",
+    "c3b53308695238d0",
+    "3e4fe751c6188bf6",
+    "27c627c66daa1753"
+   ]
+  },
+  "H09": {
+   "exterior": [
+    "0a8c325822b9a1dc",
+    "5af124e6f7c9d579"
+   ]
+  },
+  "H10": {
+   "exterior": [
+    "09e17e86d4eb31cc",
+    "d94c4dc2405e038d"
+   ]
   }
  },
  "skip": {
@@ -1468,7 +1606,20 @@
    "cca5258df4de74a6",
    "dfcf3fb2bbc93c27",
    "c526400e3f429687",
-   "e0ff591cc2cca889"
+   "e0ff591cc2cca889",
+   "ccc7624c18010e9f",
+   "9324a6a658610c38",
+   "4d84a8f8cfecdf3b",
+   "ea3d0a8658e7a0d4",
+   "bff4a25bd32f74f8",
+   "33de5acfe1ae25ac",
+   "0f5dfb3f458d9b21",
+   "5150ed80319e27f1",
+   "506c5e55c3497fc3",
+   "ee47be51c2586c1d",
+   "b5eb315366abe6ea",
+   "bb1af9701e8409e5",
+   "ddffc3497685bb97"
   ],
   "Outdoor amenity scene, neither a view of the building nor an interior": [
    "35f635ff10844cc9",
@@ -1572,7 +1723,32 @@
   "d72db1625eaaf15a",
   "b16a2aa3e780ba13",
   "76f490bf0be25cb1",
-  "2b5e8e29a8916006"
+  "2b5e8e29a8916006",
+  "4d1935adb4393781",
+  "eddb7e662c77a9f5",
+  "f95511efab46d8e5",
+  "7ccd3505caf6ea59",
+  "42f0b2bf681f5286",
+  "8329644eca4520fc",
+  "9f37bda5ad9a8813",
+  "f8c5e0fabf886e15",
+  "cedd5fdc06dfe0d1",
+  "56687f4eee110862",
+  "f90f869efd649b0a",
+  "b5c9b5f2c767c489",
+  "7db0ba390407ebdb",
+  "2182f858d1e83707",
+  "052df2669e46c9a7",
+  "80f3ea9c937caa7a",
+  "310b79af1cdd61c9",
+  "6358f72e8af45031",
+  "2fcad4878baf5626",
+  "9811c4f4685e8611",
+  "8e3b033c26e8e471",
+  "8a63d18b2b608b74",
+  "234a7651b2d26e24",
+  "0d1fa6b21ac847a3",
+  "a7679d655590ac55"
  ],
  "inset": {
   "8320aa43bd14d3de": 0.035,
@@ -1582,6 +1758,24 @@
   "a8bbf1ff981fb5af": 0.05,
   "bf74c69f916d705a": 0.05,
   "ae022d3f948a8f15": 0.07,
-  "256c51695a2612b6": 0.07
+  "256c51695a2612b6": 0.07,
+  "4d1935adb4393781": 0.088,
+  "eddb7e662c77a9f5": 0.06,
+  "f95511efab46d8e5": 0.075,
+  "7ccd3505caf6ea59": 0.065,
+  "8329644eca4520fc": 0.04,
+  "9f37bda5ad9a8813": 0.04,
+  "f8c5e0fabf886e15": 0.04,
+  "cedd5fdc06dfe0d1": 0.04,
+  "56687f4eee110862": 0.04,
+  "f90f869efd649b0a": 0.04,
+  "b5c9b5f2c767c489": 0.04,
+  "7db0ba390407ebdb": 0.04,
+  "6358f72e8af45031": 0.04,
+  "8e3b033c26e8e471": 0.012,
+  "8a63d18b2b608b74": 0.012,
+  "234a7651b2d26e24": 0.012,
+  "0d1fa6b21ac847a3": 0.012,
+  "42f0b2bf681f5286": 0.035
  }
 }

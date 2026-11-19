@@ -85,11 +85,11 @@ export const FOLDER_DECISIONS = {
   "Residential/bam darband": { project: "R16", reason: 'A photograph shows the nameplate "1 BAM DARBAND"' },
   "بام دربند": { project: "R16", reason: 'Visibly the same building as "Residential/bam darband"' },
   "medical center": { project: "H03", reason: 'Identical file to "National Cancer Institute Medical Centers"' },
+  "Edari.tejri/BAM Brand Center1": { project: "T02", reason: 'The BAM résumé (1405) shows this tower as BAM Center 1 (Farmanieh). Its full-resolution photographs come from source-images instead' },
+  "برند سنتر1": { project: "T02", reason: 'Shares photographs with "BAM Brand Center1", the tower the BAM résumé (1405) shows as BAM Center 1 (Farmanieh)' },
 
   // Plausible, but a person must confirm.
-  "Luxurious Residential/BAM Niavaran": { candidates: ["R05", "R06", "R07"], reason: "No number in the folder name. It looks like the same building as بام نیاوران 3, but that cannot be told apart from Niavaran 1 or 2 without seeing them" },
-  "Edari.tejri/BAM Brand Center1": { candidates: ["T02", "T03"], reason: 'A "Brand Center 1" tower that the project list does not name directly' },
-  "برند سنتر1": { candidates: ["T02", "T03"], reason: 'Shares photographs with "BAM Brand Center1", which the project list does not name directly' },
+  "Luxurious Residential/BAM Niavaran": { candidates: ["R05", "R06", "R07"], reason: "No number in the folder name. The three Niavaran buildings share one facade design, and the archive files the same photographs under both Niavaran 1 and Niavaran 2, so they cannot be told apart" },
   "Residential/Saadatabad": { candidates: ["R15"], reason: "A single render that resembles the BAM Sepid tower" },
   "نیکان شرق- عکس افتتاحیه": { reason: "Opening-ceremony photographs of East Nikan Hospital, which is not in the project list. It holds a few good exterior shots if the project is added" },
 

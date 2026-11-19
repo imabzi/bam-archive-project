@@ -8,22 +8,22 @@ This file is rewritten by `npm run import:images`.
 
 ## Summary
 
-- Source folders matched to a project: **95**
-- Projects with imported images: **41** of 47
-- Projects without source images: **6**
-- Unmatched source folders: **12**
-- Folders needing manual review: **6**
+- Source folders matched to a project: **112**
+- Projects with imported images: **53** of 58
+- Projects without source images: **5**
+- Unmatched source folders: **8**
+- Folders needing manual review: **5**
 - Folders set aside as not project photography: **3**
-- Images imported: **191** exterior, **141** interior, **0** other
+- Images imported: **246** exterior, **168** interior, **0** other
 - Images flagged as not visually reviewed: **0**
 
-Last run: 0 images written, 373 unchanged, 4 removed.
+Last run: 18 images written, 449 unchanged, 0 removed.
 
 ## Worth checking
 
-**Showing architectural renders only, because the archive holds no photographs:** BAM Maryam, Erfan Clinic, National Cancer Center, Nikan West Hospital, Sepid Hospital, 311, B77, X11, Tajik Mall.
+**Showing architectural renders only, because the archive holds no photographs:** BAM Maryam, BAM Center Vesali, BAM Land Shiraz Township, Erfan Clinic, National Cancer Center, Nikan West Hospital, Sepid Hospital, 311, B77, X11, Tajik Mall.
 
-**Showing some renders alongside photographs:** BAM Fereshteh.
+**Showing some renders alongside photographs:** BAM Fereshteh, BAM Darbandsar, BAM Address Chalous, BAM Center Bokharest, BAM Address Shiraz.
 
 **Hero image under 1600px, so it will look soft on a large screen:** BAM Zafaraniyeh (Sarvestan), BAM Darband 02, BAM Saman, BAM Center Shariati, National Cancer Center, Nikan West Hospital, Sepid Hospital.
 
@@ -55,6 +55,8 @@ The folder name alone could not decide these. A photograph, a duplicate file or 
 - `Residential/bam darband` → **BAM Darband 01**. A photograph shows the nameplate "1 BAM DARBAND".
 - `بام دربند` → **BAM Darband 01**. Visibly the same building as "Residential/bam darband".
 - `medical center` → **National Cancer Center**. Identical file to "National Cancer Institute Medical Centers".
+- `Edari.tejri/BAM Brand Center1` → **BAM Center Farmanieh**. The BAM résumé (1405) shows this tower as BAM Center 1 (Farmanieh). Its full-resolution photographs come from source-images instead.
+- `برند سنتر1` → **BAM Center Farmanieh**. Shares photographs with "BAM Brand Center1", the tower the BAM résumé (1405) shows as BAM Center 1 (Farmanieh).
 
 **One folder holds two buildings.** `سعادت آباد پاسداران` is mostly BAM Sepid, but several of its photographs show a "BAM NARENJESTAN 27" nameplate, so those were assigned to BAM Narenjestan individually.
 
@@ -373,6 +375,33 @@ Skipped:
 - 2 — Thumbnail, screenshot or messaging-app copy
 - 1 — Near-duplicate of a better version
 
+### BAM Darbandsar
+
+```text
+BAM Darbandsar
+Source folder: BAM Darbandsar
+Exterior imported: 3
+Interior imported: 0
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
+- Low resolution, under 1600px: `BAM Darbandsar/02_IMG_4818.JPG`, `BAM Darbandsar/03_IMG_4844.JPG`
+- 1 of these are architectural renders rather than photographs.
+
+### BAM Address Chalous
+
+```text
+BAM Address Chalous
+Source folder: BAM Address Chalous | پروژه چالوس/RENDER/1 | پروژه چالوس/RENDER/1/New folder | پروژه چالوس/RENDER/2 | پروژه چالوس/RENDER/3 | پروژه چالوس/RENDER/4/New folder | پروژه چالوس/RENDER/interior
+Exterior imported: 8
+Interior imported: 4
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
+- 11 of these are architectural renders rather than photographs.
+
 ### BAM Center — Head Office
 
 ```text
@@ -389,6 +418,33 @@ Skipped:
 - 44 — Not selected on visual review
 - 3 — Exact duplicate of another file
 - 1 — Near-duplicate of a better version
+
+### BAM Center Farmanieh
+
+```text
+BAM Center Farmanieh
+Source folder: BAM Center Farmanieh
+Exterior imported: 8
+Interior imported: 8
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
+Skipped:
+
+- 7 — Not selected on visual review
+- 3 — Exact duplicate of another file
+
+### Avaan Center
+
+```text
+Avaan Center
+Source folder: Avaan Center
+Exterior imported: 7
+Interior imported: 7
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
 
 ### BAM Center Shariati
 
@@ -505,6 +561,45 @@ Skipped:
 
 - 3 — Not selected on visual review
 
+### BAM Center Bokharest
+
+```text
+BAM Center Bokharest
+Source folder: BAM Center Bokharest
+Exterior imported: 3
+Interior imported: 0
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
+- 1 of these are architectural renders rather than photographs.
+
+### BAM Center Vesali
+
+```text
+BAM Center Vesali
+Source folder: BAM Center Vesali | بام سنتر 9 (وصالی)
+Exterior imported: 3
+Interior imported: 0
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
+- 3 of these are architectural renders rather than photographs.
+
+### BAM Address Shiraz
+
+```text
+BAM Address Shiraz
+Source folder: BAM Address Shiraz
+Exterior imported: 3
+Interior imported: 0
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
+- 1 of these are architectural renders rather than photographs.
+
 ### Boostan Hashtgerd 1002-Unit Project
 
 ```text
@@ -569,6 +664,19 @@ Cover selected: exterior-01.jpg
 Skipped:
 
 - 2 — Scanned handwritten document
+
+### BAM Land Shiraz Township
+
+```text
+BAM Land Shiraz Township
+Source folder: BAM Land Shiraz Township
+Exterior imported: 8
+Interior imported: 0
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
+- 8 of these are architectural renders rather than photographs.
 
 ### Nikan Hospital
 
@@ -656,6 +764,59 @@ Other imported: 0
 Cover selected: exterior-01.jpg
 ```
 
+### Tehrani Clinic
+
+```text
+Tehrani Clinic
+Source folder: Tehrani Clinic | کلینیک طهرانی
+Exterior imported: 4
+Interior imported: 0
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
+Skipped:
+
+- 3 — Not selected on visual review
+
+### Nikan Clinic
+
+```text
+Nikan Clinic
+Source folder: Nikan Clinic
+Exterior imported: 4
+Interior imported: 8
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
+Skipped:
+
+- 3 — Not selected on visual review
+- 1 — Exact duplicate of another file
+
+### Nikan Negin Hospital
+
+```text
+Nikan Negin Hospital
+Source folder: Nikan Negin Hospital
+Exterior imported: 2
+Interior imported: 0
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
+### Nikan Hospital Expansion
+
+```text
+Nikan Hospital Expansion
+Source folder: Nikan Hospital Expansion
+Exterior imported: 2
+Interior imported: 0
+Other imported: 0
+Cover selected: exterior-01.jpg
+```
+
 ### 311
 
 ```text
@@ -735,9 +896,8 @@ Skipped:
 - **BAM Niavaran 01** (بام نیاوران ۱)
 - **BAM Niavaran 02** (بام نیاوران ۲)
 - **BAM Mahtab** (بام مهتاب)
-- **BAM Center Farmanieh** (بام سنتر فرمانیه)
-- **Avaan Center** (آوان سنتر)
 - **Araz Hotel** (هتل آراز) Its images were placed by hand in public/projects/araz-hotel and are listed in data/projectContent.ts, so this import does not manage them.
+- **Royal Residential Building** (ساختمان مسکونی رویال)
 
 ## Unmatched source folders
 
@@ -749,22 +909,17 @@ No project in `data/projects.ts` matches these folders. Nothing was imported fro
 - `bokharest` — 1 images
 - `Edari.tejri/BAM BOKHAREST` — 1 images
 - `Edari.tejri/BAM IT Center` — 2 images
-- `Hospital/NIKAN CLINIC` — 1 images
-- `بام سنتر 9 (وصالی)` — 2 images
 - `سعادت آباد` — 5 images
 - `پروژه چالوس` — 112 images
-- `کلینیک طهرانی` — 4 images
-- `کلینیک نیکان` — 3 images
 
 ## Needs manual review
 
 These may belong to a project, but the evidence is not strong enough to risk the wrong building. Nothing was imported from them.
 To resolve one, add it to `FOLDER_DECISIONS` in `scripts/image-import.config.mjs`, then rerun the import.
 
-- `Edari.tejri/BAM Brand Center1` — 6 images. A "Brand Center 1" tower that the project list does not name directly. Candidates: BAM Center Farmanieh, Avaan Center.
-- `Luxurious Residential/BAM Niavaran` — 6 images. No number in the folder name. It looks like the same building as بام نیاوران 3, but that cannot be told apart from Niavaran 1 or 2 without seeing them. Candidates: BAM Niavaran 01, BAM Niavaran 02, BAM Niavaran 03.
+- `Luxurious Residential/BAM Niavaran` — 6 images. No number in the folder name. The three Niavaran buildings share one facade design, and the archive files the same photographs under both Niavaran 1 and Niavaran 2, so they cannot be told apart. Candidates: BAM Niavaran 01, BAM Niavaran 02, BAM Niavaran 03.
 - `Residential/Saadatabad` — 1 images. A single render that resembles the BAM Sepid tower. Candidates: BAM Sepid.
-- `برند سنتر1` — 4 images. Shares photographs with "BAM Brand Center1", which the project list does not name directly. Candidates: BAM Center Farmanieh, Avaan Center.
+- `بام سنتر 9 (وصالی)` — 2 images. Folder name adds words to a project name, so it may be a different building. Candidates: BAM Center Vesali.
 - `سروستان 2` — 16 images. Folder name adds words to a project name, so it may be a different building. Candidates: BAM Zafaraniyeh (Sarvestan).
 - `نیکان شرق- عکس افتتاحیه` — 151 images. Opening-ceremony photographs of East Nikan Hospital, which is not in the project list. It holds a few good exterior shots if the project is added.
 

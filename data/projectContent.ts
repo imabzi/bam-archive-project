@@ -329,4 +329,51 @@ export const projectContent: Record<string, ProjectContent> = {
     location: inTehran,
     facts: { completionYear: { en: "2013", fa: "۱۳۹۱" }, floors: 4 },
   },
+
+  // Added from BAM's own project records on drive E. BAM_Archive_Content_Update_Report_FA.md
+  // records the source of each value.
+  R24: {
+    description: {
+      en: "A villa township in Chalous. The land is divided into 52 plots of 400 to 700 m², with four villa types. Amenities include a private entrance to the forest, volleyball and tennis courts and a gym.",
+      fa: "شهرکی ویلایی در چالوس. زمین آن به ۵۲ قطعه از ۴۰۰ تا ۷۰۰ متر مربع تقسیم شده و چهار نوع ویلا در آن طراحی شده است. ورودی مستقل به جنگل، زمین‌های والیبال و تنیس و سالن بدنسازی از امکانات آن است.",
+    },
+    location: { city: { en: "Chalous", fa: "چالوس" }, country: iran },
+  },
+  T12: {
+    description: {
+      en: "An office building on Bokharest Street in Tehran, designed by Farzad Daliri.",
+      fa: "ساختمانی اداری در خیابان بخارست تهران، با طراحی فرزاد دلیری.",
+    },
+    location: inTehran,
+    facts: { siteArea: 440, architect: daliri },
+  },
+  T14: {
+    description: {
+      en: "An office, commercial and medical complex on Zand Street in Shiraz, with 250 commercial, 216 office and 71 medical units.",
+      fa: "مجموعه‌ای اداری، تجاری و درمانی در خیابان زند شیراز، با ۲۵۰ واحد تجاری، ۲۱۶ واحد اداری و ۷۱ واحد درمانی.",
+    },
+    location: { city: { en: "Shiraz", fa: "شیراز" }, country: iran },
+    facts: { siteArea: 8001, floors: 17, parking: 1085, architect: daliri },
+  },
+  M05: {
+    description: {
+      en: "A 30-hectare township in Shiraz for living, work and leisure. Its plan includes pools and sports facilities, a shopping centre, a medical centre, a beauty centre, offices and a five-star hotel.",
+      fa: "شهرکی ۳۰ هکتاری در شیراز برای زندگی، کار و تفریح. استخرها و مجموعه‌های ورزشی، مرکز خرید، مرکز درمانی، بیوتی سنتر، واحدهای اداری و هتل پنج ستاره در طرح آن پیش‌بینی شده است.",
+    },
+    location: { city: { en: "Shiraz", fa: "شیراز" }, country: iran },
+    facts: { siteArea: 300000 },
+  },
+  H07: {
+    description: {
+      en: "A round-the-clock clinic designed and built by BAM, with radiology, laboratory, maternal and child health, prenatal care, emergency and dental departments.",
+      fa: "کلینیک شبانه‌روزی طهرانی که گروه بام آن را طراحی و اجرا کرده است. این کلینیک بخش‌های رادیولوژی، آزمایشگاه، بهداشت مادر و کودک، مراقبت‌های دوران بارداری، اورژانس و دندان‌پزشکی دارد.",
+    },
+  },
+  I05: {
+    description: {
+      en: "The conversion of a hotel into a luxury residential building in Vienna, by AED, a company of the BAM group registered in Austria.",
+      fa: "تبدیل یک هتل به ساختمان مسکونی لوکس در وین، توسط شرکت توسعه مهندسی AED، از شرکت‌های وابسته به گروه بام که در اتریش ثبت شده است.",
+    },
+    location: { city: { en: "Vienna", fa: "وین" }, country: { en: "Austria", fa: "اتریش" } },
+  },
 };
